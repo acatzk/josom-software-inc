@@ -1,5 +1,31 @@
 <template>
   <div class="home">
-    <h1>home</h1>
+    
+    <nav-bar />
+
+    <main-bar>
+
+      <v-container>
+
+        <router-view />
+
+      </v-container>
+
+    </main-bar>
+
   </div>
 </template>
+
+<script>
+export default {
+  name: 'Welcome',
+
+  components: {
+
+    NavBar: () => import('@/layouts/TheNavBar'),
+
+    MainBar: () => import('@/layouts/TheMainBar')
+
+  }
+}
+</script>
