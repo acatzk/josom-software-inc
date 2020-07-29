@@ -8,4 +8,4 @@
 
 </template>
 
-<style scoped lang="scss" src="@/assets/scss/app.scss"></style>
+<style lang="scss" src="@/assets/scss/app.scss"></style>
