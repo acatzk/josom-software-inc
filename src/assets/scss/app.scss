@@ -4,7 +4,7 @@
   font-family: "Poppins", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f7f7f7 !important;
+  background-color: #f4f8fc !important;
 }
 
 body, html {
@@ -14,16 +14,15 @@ body, html {
 }
 
 ::-webkit-scrollbar {
-    width: 9px;
+  width: 12px; 
 }
 
 ::-webkit-scrollbar-track {
-    border: 7px solid rgb(216, 216, 216);
-    box-shadow: inset 0 0 0 rgb(121, 120, 120);
+  background: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #a2aab9;
-    background-image: linear-gradient(315deg, #8b93a0 0%, #889cc2 74%);
-    border-radius: 50px;
+  background-color: rgb(158, 158, 158);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #fff;  /* creates padding around scroll thumb */
 }
