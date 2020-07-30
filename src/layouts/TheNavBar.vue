@@ -1,7 +1,7 @@
 <template>
 
     <v-app-bar
-        absolute
+        app
         color="white"
         elevate-on-scroll
     >
@@ -9,8 +9,8 @@
 
         <v-spacer></v-spacer>
 
-        <v-toolbar-title>
-            <v-icon>mdi-twitter</v-icon>
+        <v-toolbar-title class="d-flex">
+            <v-icon>mdi-instagram</v-icon> Josom
         </v-toolbar-title>
 
         <v-spacer></v-spacer>
