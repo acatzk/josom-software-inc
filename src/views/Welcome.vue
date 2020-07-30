@@ -5,7 +5,7 @@
 
     <main-bar>
 
-      <v-container>
+      <v-container class="content">
 
         <router-view />
 
@@ -30,4 +30,4 @@ export default {
 }
 </script>
 
-<style scoped src="@/assets/scss/welcome.scss"></style>
+<style scoped lang="scss" src="@/assets/scss/welcome.scss"></style>
