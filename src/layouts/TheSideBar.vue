@@ -1,40 +1,44 @@
 <template>
     <v-navigation-drawer
         v-model="show"
-        app
         clipped
+        app
     >
-        <v-list>
-            <v-list-item class="justify-center">
-                <v-list-item-avatar>
-                    <v-img 
-                        src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202090instagramlogosocialsocialmedia-115598_115703.png"
-                    ></v-img>
-                </v-list-item-avatar>
-            </v-list-item>
+        <v-layout>
+            <v-flex>
+                <v-list>
+                    <v-list-item class="justify-center">
+                        <v-list-item-avatar style="height: 100px; width: 100px;">
+                            <v-img 
+                                src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202090instagramlogosocialsocialmedia-115598_115703.png"
+                            ></v-img>
+                        </v-list-item-avatar>
+                    </v-list-item>
 
-            <v-list-item>
-                <v-list-item-content>
-                    <v-list-item-title class="title text-center">Josom Software, Inc.</v-list-item-title>
-                    <v-list-item-subtitle class="text-center">josom@solution.com</v-list-item-subtitle>
-                </v-list-item-content>
-            </v-list-item>
+                    <v-list-item>
+                        <v-list-item-content>
+                            <v-list-item-title class="title text-center">Josom Software, Inc.</v-list-item-title>
+                            <v-list-item-subtitle class="text-center">josom@solution.com</v-list-item-subtitle>
+                        </v-list-item-content>
+                    </v-list-item>
 
-            <v-list
-                nav
-                dense
-            >
-                <v-list-item 
-                    v-for="(nav, index) in navItems" :key="index"
-                    link
-                >
-                    <v-list-item-icon>
-                        <v-icon class="iconify" :data-icon="nav.icon"></v-icon>
-                    </v-list-item-icon>
-                    <v-list-item-title>{{ nav.text }}</v-list-item-title>
-                </v-list-item>
-            </v-list>
-        </v-list>
+                    <v-list
+                        nav
+                        dense
+                    >
+                        <v-list-item 
+                            v-for="(nav, index) in navItems" :key="index"
+                            link
+                        >
+                            <v-list-item-icon>
+                                <v-icon class="iconify" :data-icon="nav.icon"></v-icon>
+                            </v-list-item-icon>
+                            <v-list-item-title>{{ nav.text }}</v-list-item-title>
+                        </v-list-item>
+                    </v-list>
+                </v-list>
+            </v-flex>
+        </v-layout>
     </v-navigation-drawer>
 </template>
 
@@ -62,7 +66,7 @@ export default {
             navItems: [
                 { icon: 'bx-bx-cube', text: 'Home', to: '#home' },
                 { icon: 'ant-design:info-circle-outlined', text: 'About', to: '#about' },
-                { icon: 'mdi-web', text: 'Services', to: '#services' },
+                { icon: 'fa-solid:laptop-code', text: 'Services', to: '#services' },
                 { icon: 'gg-work-alt', text: 'Projects', to: '#projects' },
                 { icon: 'carbon-recommend', text: 'Recommendations', to: '#recommendations' },
                 { icon: 'wpf-business-contact', text: 'Contact', to: '#contact' },
@@ -73,3 +77,9 @@ export default {
 
 }
 </script>
+
+<style scoped lang="scss">
+.v-navigation-drawer {
+    background: #f4f8fc;
+}
+</style>
