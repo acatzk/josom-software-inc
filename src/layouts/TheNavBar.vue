@@ -17,14 +17,14 @@
 
             <v-spacer></v-spacer>
 
-            <v-toolbar-title class="d-flex" icon color="#162a48">
-                <v-icon class="iconify" data-icon="mdi-cube-send" color="#162a48"></v-icon> Josom
+            <v-toolbar-title class="d-flex" icon>
+                <v-icon class="iconify" data-icon="mdi-cube-send"></v-icon> Josom
             </v-toolbar-title>
 
             <v-spacer></v-spacer>
 
             <v-btn icon>
-                <v-icon class="iconify" data-icon="entypo:dots-two-vertical"></v-icon>
+                <v-icon class="iconify" data-icon="ic-outline-brightness-5"></v-icon>
             </v-btn>
 
         </v-app-bar>
