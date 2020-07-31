@@ -9,3 +9,4 @@
 </template>
 
 <style lang="scss" src="@/assets/scss/app.scss"></style>
+<script src="@/assets/js/iconify.js"></script>
