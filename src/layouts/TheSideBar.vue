@@ -1,0 +1,75 @@
+<template>
+    <v-navigation-drawer
+        v-model="show"
+        app
+        clipped
+    >
+        <v-list>
+            <v-list-item class="justify-center">
+                <v-list-item-avatar>
+                    <v-img 
+                        src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202090instagramlogosocialsocialmedia-115598_115703.png"
+                    ></v-img>
+                </v-list-item-avatar>
+            </v-list-item>
+
+            <v-list-item>
+                <v-list-item-content>
+                    <v-list-item-title class="title text-center">Josom Software, Inc.</v-list-item-title>
+                    <v-list-item-subtitle class="text-center">josom@solution.com</v-list-item-subtitle>
+                </v-list-item-content>
+            </v-list-item>
+
+            <v-list
+                nav
+                dense
+            >
+                <v-list-item 
+                    v-for="(nav, index) in navItems" :key="index"
+                    link
+                >
+                    <v-list-item-icon>
+                        <v-icon class="iconify" :data-icon="nav.icon"></v-icon>
+                    </v-list-item-icon>
+                    <v-list-item-title>{{ nav.text }}</v-list-item-title>
+                </v-list-item>
+            </v-list>
+        </v-list>
+    </v-navigation-drawer>
+</template>
+
+<script>
+export default {
+    name: 'the-side-bar',
+
+    props: ['visible'],
+
+    computed: {
+      show: {
+        get () {
+          return this.visible
+        },
+        set (value) {
+           if (!value) {
+             this.$emit('close')
+           }
+        }
+      }
+    },
+
+    data () {
+        return {
+            navItems: [
+                { icon: 'bx-bx-cube', text: 'Home', to: '#home' },
+                { icon: 'ant-design:info-circle-outlined', text: 'About', to: '#about' },
+                { icon: 'mdi-web', text: 'Services', to: '#services' },
+                { icon: 'gg-work-alt', text: 'Projects', to: '#projects' },
+                { icon: 'carbon-recommend', text: 'Recommendations', to: '#recommendations' },
+                { icon: 'wpf-business-contact', text: 'Contact', to: '#contact' },
+                { icon: 'la-users-cog-solid', text: 'Clients', to: '#client' }
+            ]
+        }
+    }
+
+}
+</script>
