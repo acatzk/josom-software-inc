@@ -17,6 +17,7 @@ Vue.use(VueFullpage)
 
 Vue.config.productionTip = false
 
+import 'animate.css'
 import 'fullpage-vue/src/fullpage.css'
 
 new Vue({
