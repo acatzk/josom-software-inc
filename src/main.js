@@ -4,7 +4,6 @@ import router from '@/router'
 import store from  '@/store'
 import vuetify from '@/plugins/vuetify'
 import VueFbCustomerChat from 'vue-fb-customer-chat'
-import VueFullpage from 'fullpage-vue' 
 
 
 Vue.use(VueFbCustomerChat, {
@@ -13,12 +12,7 @@ Vue.use(VueFbCustomerChat, {
   locale: 'en_US', // default 'en_US'
 })
 
-Vue.use(VueFullpage)
-
 Vue.config.productionTip = false
-
-import 'animate.css'
-import 'fullpage-vue/src/fullpage.css'
 
 new Vue({
   router,
