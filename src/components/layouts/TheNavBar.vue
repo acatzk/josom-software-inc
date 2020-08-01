@@ -5,7 +5,8 @@
         <v-app-bar
             app
             :color="mode ? 'white' : ''"
-            elevate-on-scroll
+            :elevate-on-scroll="mode ? true : false"
+            :flat="mode ? false : true"
             clipped-left
             :dark="mode ? false : true"
         >
