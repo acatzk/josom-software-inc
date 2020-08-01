@@ -3,7 +3,7 @@
     <a :href="href" @click.prevent="scroll">
 
         <slot></slot>
-        
+
     </a>
 
 </template>
@@ -22,6 +22,7 @@ export default {
 
             document.querySelector(this.href)
                     .scrollIntoView({ behavior: 'smooth' })
+                    
         }
 
     }
@@ -29,3 +30,9 @@ export default {
 }
 
 </script>
+
+<style scoped>
+a {
+    text-decoration: none;
+}
+</style>
