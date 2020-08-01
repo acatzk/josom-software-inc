@@ -3,13 +3,9 @@
     
     <nav-bar />
 
-    <main-bar>
-
-      <v-container class="content">
+    <main-bar class="content">
 
         <router-view />
-
-      </v-container>
 
     </main-bar>
 
