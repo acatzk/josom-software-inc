@@ -26,15 +26,16 @@
                         nav
                         dense
                     >
-                        <v-list-item 
-                            v-for="(nav, index) in navItems" :key="index"
-                            link
-                        >
-                            <v-list-item-icon>
-                                <v-icon class="iconify" :data-icon="nav.icon"></v-icon>
-                            </v-list-item-icon>
-                            <v-list-item-title>{{ nav.text }}</v-list-item-title>
-                        </v-list-item>
+                        <div  v-for="(nav, index) in navItems" :key="index">
+                            <scroll-link :href="`#${nav.to}`">
+                                <v-list-item link>
+                                    <v-list-item-icon>
+                                        <v-icon class="iconify" :data-icon="nav.icon"></v-icon>
+                                    </v-list-item-icon>
+                                    <v-list-item-title>{{ nav.text }}</v-list-item-title>
+                                </v-list-item>
+                            </scroll-link>
+                        </div>
                     </v-list>
                 </v-list>
             </v-flex>
@@ -47,6 +48,10 @@ export default {
     name: 'the-side-bar',
 
     props: ['visible'],
+
+    components: {
+        ScrollLink: () => import('@/components/mixins/ScrollLink')
+    },
 
     computed: {
       show: {
@@ -64,13 +69,13 @@ export default {
     data () {
         return {
             navItems: [
-                { icon: 'bx-bx-cube', text: 'Home', to: '#home' },
-                { icon: 'ant-design:info-circle-outlined', text: 'About', to: '#about' },
-                { icon: 'fa-solid:laptop-code', text: 'Services', to: '#services' },
+                { icon: 'bx-bx-cube', text: 'Home', to: 'home' },
+                { icon: 'ant-design:info-circle-outlined', text: 'About', to: 'about' },
+                { icon: 'fa-solid:laptop-code', text: 'Services', to: 'services' },
                 { icon: 'gg-work-alt', text: 'Projects', to: '#projects' },
-                { icon: 'carbon-recommend', text: 'Recommendations', to: '#recommendations' },
-                { icon: 'wpf-business-contact', text: 'Contact', to: '#contact' },
-                { icon: 'la-users-cog-solid', text: 'Clients', to: '#client' }
+                { icon: 'carbon-recommend', text: 'Recommendations', to: 'recommendations' },
+                { icon: 'wpf-business-contact', text: 'Contact', to: 'contact' },
+                { icon: 'la-users-cog-solid', text: 'Clients', to: 'client' }
             ]
         }
     }
