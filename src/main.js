@@ -4,6 +4,8 @@ import router from '@/router'
 import store from  '@/store'
 import vuetify from '@/plugins/vuetify'
 import VueFbCustomerChat from 'vue-fb-customer-chat'
+import VueFullpage from 'fullpage-vue' 
+
 
 Vue.use(VueFbCustomerChat, {
   page_id: '106304557778712', //  change 'null' to your Facebook Page ID,
@@ -11,7 +13,11 @@ Vue.use(VueFbCustomerChat, {
   locale: 'en_US', // default 'en_US'
 })
 
+Vue.use(VueFullpage)
+
 Vue.config.productionTip = false
+
+import 'fullpage-vue/src/fullpage.css'
 
 new Vue({
   router,
