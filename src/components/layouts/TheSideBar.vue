@@ -3,6 +3,8 @@
         v-model="show"
         clipped
         app
+        :dark="mode ? false : true"
+        :style="mode ? 'color: #f4f8fc' : ''"
     >
         <v-layout>
             <v-flex>
@@ -30,9 +32,9 @@
                             <scroll-link :href="`#${nav.to}`">
                                 <v-list-item link>
                                     <v-list-item-icon>
-                                        <v-icon class="iconify" :data-icon="nav.icon"></v-icon>
+                                        <v-icon class="iconify" :data-icon="nav.icon" :color="mode ? 'grey' : 'white'"></v-icon>
                                     </v-list-item-icon>
-                                    <v-list-item-title>{{ nav.text }}</v-list-item-title>
+                                    <v-list-item-subtitle>{{ nav.text }}</v-list-item-subtitle>
                                 </v-list-item>
                             </scroll-link>
                         </div>
@@ -44,6 +46,9 @@
 </template>
 
 <script>
+
+import { mapState } from 'vuex'
+
 export default {
     name: 'the-side-bar',
 
@@ -63,7 +68,8 @@ export default {
              this.$emit('close')
            }
         }
-      }
+      },
+      ...mapState(['mode'])
     },
 
     data () {
@@ -82,9 +88,3 @@ export default {
 
 }
 </script>
-
-<style scoped lang="scss">
-.v-navigation-drawer {
-    background: #f4f8fc;
-}
-</style>
