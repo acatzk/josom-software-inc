@@ -22,9 +22,9 @@ export default {
 
   components: {
 
-    NavBar: () => import('@/layouts/TheNavBar'),
+    NavBar: () => import('@/components/layouts/TheNavBar'),
 
-    MainBar: () => import('@/layouts/TheMainBar')
+    MainBar: () => import('@/components/layouts/TheMainBar')
 
   }
 }
