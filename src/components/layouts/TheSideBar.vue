@@ -12,7 +12,7 @@
                     <v-list-item class="justify-center">
                         <v-list-item-avatar style="height: 100px; width: 100px;">
                             <v-img 
-                                src="https://i.dlpng.com/static/png/6709152_preview.png"
+                                src="@/assets/imgs/logo.png"
                             ></v-img>
                         </v-list-item-avatar>
                     </v-list-item>
