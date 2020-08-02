@@ -2,6 +2,7 @@
   <v-card
     class="mx-auto"
     flat
+    id="home"
   >
     <v-img
       class="white--text align-end"
