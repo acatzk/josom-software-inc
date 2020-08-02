@@ -78,7 +78,7 @@ export default {
                 { icon: 'bx-bx-cube', text: 'Home', to: 'home' },
                 { icon: 'ant-design:info-circle-outlined', text: 'About', to: 'about' },
                 { icon: 'fa-solid:laptop-code', text: 'Services', to: 'services' },
-                { icon: 'gg-work-alt', text: 'Projects', to: '#projects' },
+                { icon: 'gg-work-alt', text: 'Projects', to: 'projects' },
                 { icon: 'carbon-recommend', text: 'Recommendations', to: 'recommendations' },
                 { icon: 'wpf-business-contact', text: 'Contact', to: 'contact' },
                 { icon: 'la-users-cog-solid', text: 'Clients', to: 'client' }
