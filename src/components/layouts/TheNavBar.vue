@@ -9,6 +9,7 @@
             dense
             clipped-left
             :dark="mode ? false : true"
+            hide-on-scroll
         >
             <v-btn 
                 icon
