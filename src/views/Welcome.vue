@@ -11,6 +11,9 @@
       <!-- About -->
       <about />
 
+      <!-- Services -->
+      <services />
+
     </main-bar>
 
   </div>
@@ -27,6 +30,8 @@ export default {
     MainBar: () => import('@/components/layouts/TheMainBar'),
 
     Home: () => import('@/components/pages/Home'),
+
+    Services: () => import('@/components/pages/Services'),
 
     About: () => import('@/components/pages/About')
 
