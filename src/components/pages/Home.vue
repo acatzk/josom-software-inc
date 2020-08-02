@@ -1,17 +1,16 @@
 <template>
-  <v-card
-    class="mx-auto"
-    flat
-    id="home"
-  >
-    <v-img
-      class="white--text align-end"
-      height="90vh"
-      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+    <v-card
+        class="mx-auto"
+        flat
+        id="home"
     >
-      <!-- <v-card-title>Top 10 Australian beaches</v-card-title> -->
-    </v-img>
-  </v-card>
+        <v-img
+            class="white--text align-end"
+            height="100vh"
+            src="@/assets/imgs/docks.jpg"
+        >
+        </v-img>
+    </v-card>
 </template>
 
 <style scoped>
