@@ -8,6 +8,9 @@
       <!-- Home -->
       <home />
 
+      <!-- About -->
+      <about />
+
     </main-bar>
 
   </div>
@@ -21,9 +24,11 @@ export default {
 
     NavBar: () => import('@/components/layouts/TheNavBar'),
 
+    MainBar: () => import('@/components/layouts/TheMainBar'),
+
     Home: () => import('@/components/pages/Home'),
 
-    MainBar: () => import('@/components/layouts/TheMainBar')
+    About: () => import('@/components/pages/About')
 
   }
 }
