@@ -3,7 +3,7 @@
     
     <nav-bar />
 
-    <main-bar class="content">
+    <main-bar>
 
       <!-- Home -->
       <home />
