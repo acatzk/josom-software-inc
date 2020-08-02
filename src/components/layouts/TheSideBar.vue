@@ -8,11 +8,11 @@
     >
         <v-layout>
             <v-flex>
-                <v-list>
+                <v-list dense>
                     <v-list-item class="justify-center">
                         <v-list-item-avatar style="height: 100px; width: 100px;">
                             <v-img 
-                                src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202090instagramlogosocialsocialmedia-115598_115703.png"
+                                src="https://i.dlpng.com/static/png/6709152_preview.png"
                             ></v-img>
                         </v-list-item-avatar>
                     </v-list-item>
@@ -88,3 +88,9 @@ export default {
 
 }
 </script>
+
+<style scoped>
+.drawer {
+    background-color: #f7f7f7 !important;
+}
+</style>

@@ -4,8 +4,9 @@
 
         <v-app-bar
             app
-            :color="mode ? 'white' : ''"
+            :color="mode ? '#f0f0f0' : ''"
             flat
+            dense
             clipped-left
             :dark="mode ? false : true"
         >
@@ -21,8 +22,8 @@
 
             <v-spacer></v-spacer>
 
-            <v-toolbar-title class="d-flex">
-                <v-icon>mdi-lumx</v-icon> Josom
+            <v-toolbar-title class="d-flex" color="#000">
+                <v-icon :color="mode ? '#000' : undefined">mdi-apple</v-icon> Josom
             </v-toolbar-title>
 
             <v-spacer></v-spacer>
