@@ -5,7 +5,8 @@
 
     <main-bar class="content">
 
-        <router-view />
+      <!-- Home -->
+      <home />
 
     </main-bar>
 
@@ -19,6 +20,8 @@ export default {
   components: {
 
     NavBar: () => import('@/components/layouts/TheNavBar'),
+
+    Home: () => import('@/components/pages/Home'),
 
     MainBar: () => import('@/components/layouts/TheMainBar')
 
