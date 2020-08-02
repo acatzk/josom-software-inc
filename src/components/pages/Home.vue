@@ -31,6 +31,7 @@
                             color="blue"
                             class="white--text mt-5"
                             x-large
+                            @click.prevent="scroll"
                         >
                             DISCOVER MORE <v-icon right>mdi-arrow-right</v-icon>
                         </v-btn>
@@ -40,6 +41,23 @@
         </v-img>
     </v-card>
 </template>
+
+<script>
+export default {
+    name: 'home',
+
+    components: {
+        ScrollLink: () => import('@/components/mixins/ScrollLink')
+    },
+
+    methods: {
+        scroll() {
+            document.querySelector('#about')
+                    .scrollIntoView({ behavior: 'smooth' })            
+        }
+    }
+}
+</script>
 
 <style scoped lang="scss">
 .v-card {
