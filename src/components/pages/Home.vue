@@ -46,10 +46,6 @@
 export default {
     name: 'home',
 
-    components: {
-        ScrollLink: () => import('@/components/mixins/ScrollLink')
-    },
-
     methods: {
         scroll() {
             document.querySelector('#about')
