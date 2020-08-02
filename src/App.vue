@@ -1,6 +1,6 @@
 <template>
 
-  <v-app :style="mode ? 'background-color: #f4f8fc;' : 'background-color: #363636;'">
+  <v-app :style="mode ? 'background-color: #f7f7f7;' : 'background-color: #363636;'">
 
     <router-view /> <!-- DYNAMIC WEB PAGES LOAD -->
 

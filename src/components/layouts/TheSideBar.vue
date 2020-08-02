@@ -4,7 +4,7 @@
         clipped
         app
         :dark="mode ? false : true"
-        :style="mode ? 'color: #f4f8fc' : ''"
+        :style="mode ? 'background-color: #f7f7f7' : ''"
     >
         <v-layout>
             <v-flex>
