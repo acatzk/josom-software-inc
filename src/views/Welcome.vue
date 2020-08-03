@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     
+    <!-- Navigation Bar -->
     <nav-bar />
 
     <main-bar>
@@ -13,6 +14,10 @@
 
       <!-- Services -->
       <services />
+
+
+      <!-- Footer Bar -->
+      <foot-bar />
 
     </main-bar>
 
@@ -33,7 +38,9 @@ export default {
 
     Services: () => import('@/components/pages/Services'),
 
-    About: () => import('@/components/pages/About')
+    About: () => import('@/components/pages/About'),
+
+    FootBar: () => import('@/components/layouts/TheFootBar')
 
   }
 }
