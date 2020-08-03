@@ -4,6 +4,8 @@
 
     <router-view /> <!-- DYNAMIC WEB PAGES LOAD -->
 
+    <back-to-top /> <!-- BACK TO TOP BUTTON -->
+
   </v-app>
 
 </template>
@@ -17,6 +19,10 @@ import { mapState } from 'vuex'
 
 export default {
   name: 'app',
+
+  components: {
+    BackToTop: () => import('@/components/mixins/BackToTop')
+  },
 
   computed: {
     ...mapState(['mode'])
