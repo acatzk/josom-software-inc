@@ -20,7 +20,7 @@
                     <v-list-item>
                         <v-list-item-content>
                             <v-list-item-title class="title text-center">Josom Software, Inc.</v-list-item-title>
-                            <v-list-item-subtitle class="text-center">josom@solution.com</v-list-item-subtitle>
+                            <v-list-item-subtitle class="text-center">josomsoftware@gmail.com</v-list-item-subtitle>
                         </v-list-item-content>
                     </v-list-item>
 
