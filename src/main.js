@@ -4,6 +4,7 @@ import router from '@/router'
 import store from  '@/store'
 import vuetify from '@/plugins/vuetify'
 import VueFbCustomerChat from 'vue-fb-customer-chat'
+import VueParticles from 'vue-particles'
 
 Vue.use(VueFbCustomerChat, {
   page_id: null, //  change 'null' to your Facebook Page ID, 106304557778712
@@ -11,6 +12,8 @@ Vue.use(VueFbCustomerChat, {
   locale: 'en_US', // default 'en_US'
 })
 
+
+Vue.use(VueParticles)
 
 Vue.config.productionTip = false
 
