@@ -4,13 +4,15 @@ import router from '@/router'
 import store from  '@/store'
 import vuetify from '@/plugins/vuetify'
 import VueFbCustomerChat from 'vue-fb-customer-chat'
-
+import VueAgile from 'vue-agile'
 
 Vue.use(VueFbCustomerChat, {
   page_id: '106304557778712', //  change 'null' to your Facebook Page ID,
   theme_color: '#333333', // theme color in HEX
   locale: 'en_US', // default 'en_US'
 })
+
+Vue.use(VueAgile)
 
 Vue.config.productionTip = false
 
