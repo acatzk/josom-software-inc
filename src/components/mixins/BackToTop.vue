@@ -12,11 +12,12 @@
             fixed 
             bottom 
             right 
+            class="elevation-20"
             :color="mode ? 'primary' : 'error'" 
             @click="toTop"
         >
 
-          <v-icon>mdi-arrow-up</v-icon>
+          <v-icon class="iconify" data-icon="bi-chevron-up"></v-icon>
 
         </v-btn>
 
@@ -36,7 +37,7 @@ export default {
 
     data () {
         return {
-            fab:false
+            fab: false
         }
     },
 
@@ -48,17 +49,17 @@ export default {
 
         onScroll (e) {
 
-        if(typeof window === 'undefined') return
+            if(typeof window === 'undefined') return
 
-        const top = window.pageYOffset || e.target.scrollTop || 0
+            const top = window.pageYOffset || e.target.scrollTop || 0
 
-        this.fab = top > 10
+            this.fab = top > 10
 
         },
 
         toTop (){
             
-        this.$vuetify.goTo(0)
+            this.$vuetify.goTo(0)
 
         }
 
