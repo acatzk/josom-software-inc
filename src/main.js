@@ -7,7 +7,7 @@ import VueFbCustomerChat from 'vue-fb-customer-chat'
 import VueAgile from 'vue-agile'
 
 Vue.use(VueFbCustomerChat, {
-  page_id: '106304557778712', //  change 'null' to your Facebook Page ID,
+  page_id: null, //  change 'null' to your Facebook Page ID, 106304557778712
   theme_color: '#333333', // theme color in HEX
   locale: 'en_US', // default 'en_US'
 })
