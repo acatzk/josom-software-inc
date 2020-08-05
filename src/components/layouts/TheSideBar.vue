@@ -31,9 +31,9 @@
                             <scroll-link :href="`#${nav.to}`">
                                 <v-list-item link>
                                     <v-list-item-icon>
-                                        <v-icon class="iconify" :data-icon="nav.icon" :color="mode ? 'grey' : 'white'"></v-icon>
+                                        <v-icon>{{ nav.icon }}</v-icon>
                                     </v-list-item-icon>
-                                    <v-list-item-subtitle>{{ nav.text }}</v-list-item-subtitle>
+                                    <v-list-item-title>{{ nav.text }}</v-list-item-title>
                                 </v-list-item>
                             </scroll-link>
                         </div>
@@ -74,13 +74,13 @@ export default {
     data () {
         return {
             navItems: [
-                { icon: 'bx-bx-cube', text: 'Home', to: 'home' },
-                { icon: 'ant-design:info-circle-outlined', text: 'About', to: 'about' },
-                { icon: 'fa-solid:laptop-code', text: 'Services', to: 'services' },
-                { icon: 'gg-work-alt', text: 'Projects', to: 'projects' },
-                { icon: 'carbon-recommend', text: 'Recommendations', to: 'recommendations' },
-                { icon: 'wpf-business-contact', text: 'Contact', to: 'contact' },
-                { icon: 'la-users-cog-solid', text: 'Clients', to: 'client' }
+                { icon: 'mdi-cube-outline', text: 'Home', to: 'home' },
+                { icon: 'mdi-information-outline', text: 'About', to: 'about' },
+                { icon: 'mdi-code-tags', text: 'Services', to: 'services' },
+                { icon: 'mdi-laptop-mac', text: 'Projects', to: 'projects' },
+                { icon: 'mdi-ribbon', text: 'Recommendations', to: 'recommendations' },
+                { icon: 'mdi-account-box-outline', text: 'Contact', to: 'contact' },
+                { icon: 'mdi-account-multiple-outline', text: 'Clients', to: 'client' }
             ]
         }
     }
