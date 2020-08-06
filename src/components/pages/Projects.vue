@@ -16,7 +16,8 @@
                 </v-card-text>
             </v-flex>
 
-            <card-carousel />
+            <!-- <card-carousel /> -->
+            <horizontal-list />
 
         </v-container>
     </v-card>
@@ -34,7 +35,8 @@ export default {
     },
 
     components: {
-        CardCarousel: () => import('@/components/mixins/CardCarousel')
+        CardCarousel: () => import('@/components/mixins/CardCarousel'),
+        HorizontalList: () => import('@/components/mixins/HorizontalList')
     }
 }
 </script>
