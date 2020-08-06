@@ -23,9 +23,11 @@
 
             <v-spacer></v-spacer>
 
-            <v-toolbar-title class="d-flex" color="#000">
-                <v-icon :color="mode ? '#000' : undefined">mdi-apple</v-icon> Josom
-            </v-toolbar-title>
+            <v-list-item-avatar style="width: 20px;">
+                <v-img 
+                    :src="getbusinessLogo(mode)"
+                ></v-img>
+            </v-list-item-avatar>
 
             <v-spacer></v-spacer>
 
@@ -68,6 +70,12 @@ export default {
 
     computed: {
         ...mapState(['mode'])
+    },
+
+    methods: {
+        getbusinessLogo (mode) {
+            return mode ? require('@/assets/imgs/brand/logo-dark.png') : require('@/assets/imgs/brand/logo-light.png')
+        }
     }
 }
 </script>
