@@ -1,5 +1,5 @@
 <template>
-    <div class="wrap-banner">
+    <div class="wrap-banner" id="home">
       <div class="main-title">
         <h2 class="text-uppercase">
           Making great things possible
