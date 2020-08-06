@@ -1,40 +1,24 @@
 <template>
-    <v-card
-        class="mx-auto"
-        flat
-        id="home"
-    >
-        <v-container
-            class="fill-height"
-            fluid
-            style="position: absolute;"
+    <div class="wrap-banner">
+      <div class="main-title">
+        <h2 class="text-uppercase">
+          Making great things possible
+        </h2>
+        <p class="subtitle">
+          Josom Software, Inc.
+        </p>
+        <br>
+        <v-btn
+            depressed
+            :color="mode ? 'blue' : 'error'"
+            class="white--text mt-5"
+            x-large
+            @click.prevent="scroll"
+            rounded
         >
-            <v-row>
-                <v-col 
-                    cols="12" 
-                    align="center"
-                    justify="center"
-                >
-                    <h1 class="text-uppercase white--text">
-                        Making great things possible
-                    </h1>
-                    <span class="white--text">
-                        Josom Software, Inc.
-                    </span> 
-                    <br>
-                    <v-btn
-                        depressed
-                        :color="mode ? 'blue' : 'error'"
-                        class="white--text mt-5"
-                        x-large
-                        @click.prevent="scroll"
-                        rounded
-                    >
-                        DISCOVER MORE <v-icon right>mdi-arrow-right</v-icon>
-                    </v-btn>
-                </v-col>
-            </v-row>
-        </v-container>
+            DISCOVER MORE <v-icon right>mdi-arrow-right</v-icon>
+        </v-btn>
+      </div>
 
         <vue-particles
             color="#fff"
@@ -56,7 +40,7 @@
             class="particles"
         >
         </vue-particles>
-    </v-card>
+    </div>
 </template>
 
 <script>
@@ -80,24 +64,43 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.v-card {
-    border-radius: 0 !important;
-    -moz-webkit-border-radius: 0 !important;
-    text-align: center;
 
-    h1 {
-        font-size: 38px !important;
-    }
-    span {
-        font-size: 20px !important;
+.wrap-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    .main-title {
+        position: absolute;
+        text-align: center;
+
+        h2 {
+            font-size: 4rem;
+            font-family: 'Teko', sans-serif;
+            text-shadow: 2px 3px #000000;
+            text-transform: uppercase;
+            margin: 0;
+            @media (max-width: 767px) {
+                font-size: 3rem;
+            }
+        }
+
+        p.subtitle {
+            font-size: 1.7rem;
+            margin: 0;
+            @media (max-width: 767px) {
+                font-size: 1rem;
+            }
+        }
     }
 
+    .particles {
+        background-image: linear-gradient(rgba(80, 80, 80, 0.5), rgba(0, 0, 0, .5)), url("../../assets/imgs/home.jpg");
+        background-size: cover;
+        width: 100%;
+    }
 }
 
-.particles {
-    background-image: linear-gradient(rgba(80, 80, 80, 0.5), rgba(0, 0, 0, .5)), url("../../assets/imgs/home.jpg");
-    background-size: cover;
-
-}
 
 </style>
