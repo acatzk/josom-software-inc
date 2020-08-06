@@ -12,7 +12,7 @@
                     <v-list-item class="justify-center">
                         <v-list-item-avatar style="height: 100px; width: 100px;">
                             <v-img 
-                                src="@/assets/imgs/logo.png"
+                                :src="getBrandLogo(mode)"
                             ></v-img>
                         </v-list-item-avatar>
                     </v-list-item>
@@ -82,6 +82,12 @@ export default {
                 { icon: 'mdi-account-box-outline', text: 'Contact', to: 'contact' },
                 { icon: 'mdi-account-multiple-outline', text: 'Clients', to: 'client' }
             ]
+        }
+    },
+
+    methods: {
+        getBrandLogo (mode) {
+            return mode ? require('@/assets/imgs/brand/logo-dark.png') : require('@/assets/imgs/brand/logo-light.png')
         }
     }
 
