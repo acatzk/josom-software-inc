@@ -27,11 +27,8 @@
                 >
                     <v-card
                         :dark="mode ? false : true"
-                        hover
                         flat
-                        router
                         :class="`bg-image-${service.number}`"
-                        to="/"
                     >
                         <v-container>
                             <div class="number">
