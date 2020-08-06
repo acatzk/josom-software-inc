@@ -13,7 +13,7 @@
                     WHAT WE DO
                 </div>
                 <v-card-text class="font-weight-bold text-uppercase title">
-                    <h3>OUR SERVICES</h3>
+                    <h2>OUR SERVICES</h2>
                 </v-card-text>
             </v-flex>
 
@@ -88,6 +88,13 @@ export default {
     min-height: 100vh;
     padding-top: 50px;
 
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    margin: 0;
 }
 
 </style>
