@@ -15,6 +15,8 @@
       <!-- Services -->
       <services />
 
+      <!-- Projects -->
+      <projects />
 
       <!-- Footer Bar -->
       <foot-bar />
@@ -36,9 +38,11 @@ export default {
 
     Home: () => import('@/components/pages/Home'),
 
+    About: () => import('@/components/pages/About'),
+
     Services: () => import('@/components/pages/Services'),
 
-    About: () => import('@/components/pages/About'),
+    Projects: () => import('@/components/pages/Projects'),
 
     FootBar: () => import('@/components/layouts/TheFootBar')
 
