@@ -24,7 +24,7 @@
                     <br>
                     <v-btn
                         depressed
-                        color="blue"
+                        :color="mode ? 'blue' : 'error'"
                         class="white--text mt-5"
                         x-large
                         @click.prevent="scroll"
@@ -59,6 +59,9 @@
 </template>
 
 <script>
+
+import { mapState } from 'vuex'
+
 export default {
     name: 'home',
 
@@ -67,6 +70,10 @@ export default {
             document.querySelector('#about')
                     .scrollIntoView({ behavior: 'smooth' })            
         }
+    },
+
+    computed: {
+        ...mapState(['mode'])
     }
 }
 </script>
