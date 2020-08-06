@@ -28,6 +28,7 @@
                         class="white--text mt-5"
                         x-large
                         @click.prevent="scroll"
+                        rounded
                     >
                         DISCOVER MORE <v-icon right>mdi-arrow-right</v-icon>
                     </v-btn>
