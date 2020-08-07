@@ -34,7 +34,7 @@
                             <div class="number">
                                 {{ service.number }}
                             </div>
-                            <h5 :style="mode ? 'color: #5c9ddd' : 'color: #5c9ddd'">
+                            <h5>
                                 {{ service.title }}
                             </h5>
                             <p class="text-justify">
@@ -137,7 +137,8 @@ h2 {
 h5 {
     font-size: 40px;
     margin-bottom: 20px;
-    border-color: #ff5252;
+    color: #5c9ddd;
+    text-shadow: 1px 1px rgb(39, 39, 39);
 }
 
 p {
