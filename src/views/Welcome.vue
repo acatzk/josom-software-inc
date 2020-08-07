@@ -18,6 +18,9 @@
       <!-- Projects -->
       <projects />
 
+      <!-- Recommendations -->
+      <recommendations />
+
       <!-- Footer Bar -->
       <foot-bar />
 
@@ -43,6 +46,8 @@ export default {
     Services: () => import('@/components/pages/Services'),
 
     Projects: () => import('@/components/pages/Projects'),
+
+    Recommendations: () => import('@/components/pages/Recommendations'),
 
     FootBar: () => import('@/components/layouts/TheFootBar')
 
