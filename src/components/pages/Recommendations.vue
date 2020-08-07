@@ -49,5 +49,6 @@ h2 {
     font-family: 'Teko', sans-serif;
     text-transform: uppercase;
     margin: 0;
+    text-shadow: 2px 2px rgb(39, 39, 39);
 }
 </style>
