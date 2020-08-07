@@ -21,6 +21,9 @@
       <!-- Recommendations -->
       <recommendations />
 
+      <!-- Our Team -->
+      <our-team />
+
       <!-- Footer Bar -->
       <foot-bar />
 
@@ -48,6 +51,8 @@ export default {
     Projects: () => import('@/components/pages/Projects'),
 
     Recommendations: () => import('@/components/pages/Recommendations'),
+
+    OurTeam: () => import('@/components/pages/OurTeam'),
 
     FootBar: () => import('@/components/layouts/TheFootBar')
 
