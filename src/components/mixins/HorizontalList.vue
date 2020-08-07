@@ -26,6 +26,7 @@
                         <v-btn 
                             depressed
                             small
+                            text
                         >
                            <v-icon left>mdi-web</v-icon> Demo
                         </v-btn>
