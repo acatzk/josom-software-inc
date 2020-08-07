@@ -5,6 +5,8 @@ import store from  '@/store'
 import vuetify from '@/plugins/vuetify'
 import VueFbCustomerChat from 'vue-fb-customer-chat'
 import VueParticles from 'vue-particles'
+import Carousel3d from 'vue-carousel-3d'
+
 
 Vue.use(VueFbCustomerChat, {
   page_id: null, //  change 'null' to your Facebook Page ID, 106304557778712
@@ -14,6 +16,8 @@ Vue.use(VueFbCustomerChat, {
 
 
 Vue.use(VueParticles)
+Vue.use(Carousel3d)
+
 
 Vue.config.productionTip = false
 
