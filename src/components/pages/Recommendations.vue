@@ -43,6 +43,7 @@ export default {
     background-image: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, .6)), url('../../assets/imgs/docks.jpg');
     background-size: cover;
     padding-top: 50px;
+    background-attachment: fixed;
 }
 h2 {
     font-size: 2.2rem;
