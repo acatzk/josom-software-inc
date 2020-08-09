@@ -176,7 +176,7 @@ export default {
 .v-card {
     border-radius: 0 !important;
     -moz-webkit-border-radius: 0;
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 50px;
 }
 h2 {
