@@ -27,6 +27,9 @@
       <!-- Contact Us -->
       <contact-us />
 
+      <!-- Our Satisfied Client -->
+      <our-clients />
+
       <!-- Footer Bar -->
       <foot-bar />
 
@@ -58,6 +61,8 @@ export default {
     OurTeam: () => import('@/components/pages/OurTeam'),
 
     ContactUs: () => import('@/components/pages/ContactUs'),
+
+    OurClients: () => import('@/components/pages/OurClients'),
 
     FootBar: () => import('@/components/layouts/TheFootBar')
 
