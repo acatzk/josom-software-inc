@@ -28,14 +28,16 @@
                     ref="form"
                     v-model="valid"
                     :lazy-validation="lazy"
+                    :disabled="loading" 
                 >
-                    <v-row class="mx-6">
+                    <v-row class="mx-12">
                         <v-col cols="12" sm="4">
                             <v-text-field
                                 v-model="name"
                                 label="Name"
                                 required
                                 filled
+                                :rules="[required('Name')]"
                             ></v-text-field>
                         </v-col>
 
@@ -45,6 +47,7 @@
                                 label="Email"
                                 filled
                                 required
+                                :rules="[required('Email'), emailRules('Email')]"
                             ></v-text-field>
                         </v-col>
 
@@ -54,6 +57,7 @@
                                 label="Phone"
                                 required
                                 filled
+                                :rules="[required('Phone')]"
                             ></v-text-field>
                         </v-col>
 
@@ -62,6 +66,7 @@
                                 filled
                                 label="Message"
                                 v-model="message"
+                                :rules="[required('Messag')]"
                             ></v-textarea>
                         </v-col>
 
@@ -71,6 +76,8 @@
                                 depressed
                                 rounded
                                 large
+                                @click="onSendMessage"
+                                :loading="loading"
                             >
                                 SEND MESSAGES <v-icon right>mdi-send</v-icon>
                             </v-btn>
@@ -89,6 +96,8 @@
 
 import { mapState } from 'vuex'
 
+import { required, emailRules } from '@/utils'
+
 export default {
     name: 'recommendations',
 
@@ -99,12 +108,27 @@ export default {
             phone: '',
             message: '',
             valid: true,
-            lazy: false
+            lazy: false,
+            loading: false,
+            required(propertyType) { 
+                return required(propertyType)
+            },
+            emailRules(propertyType) {
+                return emailRules(propertyType)
+            }
         }
     },
 
     computed: {
         ...mapState(['mode'])
+    },
+
+    methods: {
+        onSendMessage () {
+            if (this.$refs.form.validate()) {
+                this.$refs.form.reset()
+            }
+        }
     }
 }
 </script>
