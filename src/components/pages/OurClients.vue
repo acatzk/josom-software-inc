@@ -1,6 +1,7 @@
 <template>
     <v-card 
         flat 
+        id="client"
         class="mx-auto"
         :dark="mode ? false : true"
         :style="mode ? 'background-color: #f7f7f7;' : 'background-color: #363636;'"
