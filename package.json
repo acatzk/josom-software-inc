@@ -10,6 +10,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "core-js": "^3.6.5",
+    "sweetalert2": "^9.17.1",
     "vue": "^2.6.11",
     "vue-carousel-3d": "^0.2.0",
     "vue-fb-customer-chat": "^0.2.0",
