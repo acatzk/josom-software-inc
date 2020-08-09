@@ -11,7 +11,7 @@
                 </v-card-text>
             </v-flex>
 
-            <v-flex class="text-center">
+            <v-flex>
                 <div class="d-flex justify-center">
                     <v-icon>mdi-home-outline</v-icon>: #Baybay, Leyte
                 </div>
@@ -96,7 +96,9 @@
 
 import { mapState } from 'vuex'
 
-import { required, emailRules } from '@/utils'
+import { toastAlertStatus, required, emailRules } from '@/utils'
+
+import gql from 'graphql-tag'
 
 export default {
     name: 'recommendations',
@@ -126,7 +128,44 @@ export default {
     methods: {
         onSendMessage () {
             if (this.$refs.form.validate()) {
-                this.$refs.form.reset()
+                this.loading = true
+
+                const {
+                    name,
+                    email,
+                    phone,
+                    message
+                } = this.$data
+
+                this
+                 .$apollo
+                 .mutate({
+                     mutation: gql`
+                        mutation messageEmail($email: String!, $message: String!, $name: String!, $phone: String) {
+                            insert_email_employer(objects: [{email: $email, message: $message, name: $name, phone: $phone}]) {
+                            returning {
+                                    id
+                                }
+                            }
+                        }  
+                     `,
+                     variables: {
+                         name,
+                         email,
+                         phone,
+                         message
+                     }
+                 })
+                 .then(() => {
+                    this.loading = false
+                    toastAlertStatus('success', 'Email Successfully Sent')
+                    this.$refs.form.reset()
+                 })
+                 .catch(error => {
+                     this.loading = false
+                     toastAlertStatus('error', error)
+                 })
+
             }
         }
     }
