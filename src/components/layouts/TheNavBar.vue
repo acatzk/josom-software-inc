@@ -23,7 +23,10 @@
 
             <v-spacer></v-spacer>
 
-            <v-list-item-avatar style="width: 20px;">
+            <v-list-item-avatar 
+                @click.prevent="scroll" 
+                style="cursor: pointer; width: 20px;"
+            >
                 <v-img 
                     :src="getbusinessLogo(mode)"
                 ></v-img>
@@ -75,6 +78,9 @@ export default {
     methods: {
         getbusinessLogo (mode) {
             return mode ? require('@/assets/imgs/brand/logo-dark.png') : require('@/assets/imgs/brand/logo-light.png')
+        },
+        scroll() {
+            document.querySelector('#home').scrollIntoView({ behavior: 'smooth' })        
         }
     }
 }
