@@ -6,6 +6,7 @@ import vuetify from '@/plugins/vuetify'
 import VueFbCustomerChat from 'vue-fb-customer-chat'
 import VueParticles from 'vue-particles'
 import Carousel3d from 'vue-carousel-3d'
+import { apolloProvider } from '@/services'
 
 
 Vue.use(VueFbCustomerChat, {
@@ -25,5 +26,6 @@ new Vue({
   router,
   store,
   vuetify,
+  apolloProvider,
   render: h => h(App)
 }).$mount("#app")
