@@ -24,6 +24,9 @@
       <!-- Our Team -->
       <our-team />
 
+      <!-- Contact Us -->
+      <contact-us />
+
       <!-- Footer Bar -->
       <foot-bar />
 
@@ -53,6 +56,8 @@ export default {
     Recommendations: () => import('@/components/pages/Recommendations'),
 
     OurTeam: () => import('@/components/pages/OurTeam'),
+
+    ContactUs: () => import('@/components/pages/ContactUs'),
 
     FootBar: () => import('@/components/layouts/TheFootBar')
 
