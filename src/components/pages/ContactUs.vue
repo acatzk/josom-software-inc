@@ -66,7 +66,7 @@
                                 filled
                                 label="Message"
                                 v-model="message"
-                                :rules="[required('Messag')]"
+                                :rules="[required('Message')]"
                             ></v-textarea>
                         </v-col>
 
