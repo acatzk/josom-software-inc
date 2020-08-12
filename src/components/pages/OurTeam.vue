@@ -187,6 +187,24 @@ export default {
                     fbLink: 'https://www.facebook.com/menjhayz',
                     githubLink: '',
                     twitterLink: ''
+                },
+                {
+                    name: 'Christian Bongalan',
+                    position: 'Software Engineer',
+                    speech: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo expedita illo dignissimos optio consequuntur met voluptatum?',
+                    image: 'https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.0-9/74205777_446012632997493_777782435155804160_n.jpg?_nc_cat=108&_nc_sid=09cbfe&_nc_ohc=xKkfdmEKuOwAX9znXGI&_nc_ht=scontent.fmnl8-1.fna&oh=13f0f18b3846a2237a2befedc1730ed9&oe=5F5A1643',
+                    fbLink: 'https://www.facebook.com/christianrommel.reyes.31',
+                    githubLink: '',
+                    twitterLink: ''
+                },
+                 {
+                    name: 'Jey Rexon Libato',
+                    position: 'Software Engineer',
+                    speech: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo expedita illo dignissimos optio consequuntur met voluptatum?',
+                    image: 'https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.0-9/70303449_2185451815079356_3517642107357495296_n.jpg?_nc_cat=106&_nc_sid=174925&_nc_ohc=cebXuvq21CEAX8ulWJh&_nc_oc=AQlDqE_edM4oopBQYkB5TqG8Cdggt1rJmo3-kuS3bhiOat3xL8amrz4J_UVrmjiGc2M&_nc_ht=scontent.fmnl8-1.fna&oh=397115bbf81aad30eec502e485f206b8&oe=5F5A0A53',
+                    fbLink: 'https://www.facebook.com/jeyrexonlibato16/',
+                    githubLink: '',
+                    twitterLink: ''
                 }
             ]
         }
