@@ -27,7 +27,7 @@
                         nav
                         dense
                     >
-                        <div  v-for="(nav, index) in navItems" :key="index">
+                        <div  v-for="(nav, index) in navItems" :key="index" @click="show = false">
                             <scroll-link :href="`#${nav.to}`">
                                 <v-list-item link>
                                     <v-list-item-icon>
