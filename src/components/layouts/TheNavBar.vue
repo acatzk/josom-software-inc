@@ -36,6 +36,8 @@
 
             <v-switch
                 class="mt-5"
+                inset
+                dense
                 @change="$store.dispatch('darkMode')"
             ></v-switch>
 
