@@ -34,13 +34,10 @@
 
             <v-spacer></v-spacer>
 
-            <v-btn 
-                icon
-                @click.stop="$store.dispatch('darkMode')"
-            >
-                <v-icon 
-                >{{ mode ? 'mdi-lightbulb' : 'mdi-lightbulb-outline' }}</v-icon>
-            </v-btn>
+            <v-switch
+                class="mt-5"
+                @change="$store.dispatch('darkMode')"
+            ></v-switch>
 
         </v-app-bar>
 
