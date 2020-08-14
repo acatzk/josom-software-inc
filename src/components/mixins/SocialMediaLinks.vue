@@ -1,5 +1,5 @@
 <template>
-    <v-card-actions class="d-flex justify-space-around">
+    <v-card class="d-flex justify-space-around pb-2" flat>
         <v-tooltip top color="#4267B2">
             <template v-slot:activator="{ on, attrs }">
                 <v-btn
@@ -10,7 +10,6 @@
                     :href="item.fbLink"
                     target="_blank"
                     v-show="item.fbLink"
-                    rounded
                 >
                     <v-icon>mdi-facebook</v-icon>
                 </v-btn>
@@ -23,7 +22,6 @@
             <template v-slot:activator="{ on, attrs }">
                 <v-btn
                     icon
-                    rounded
                     :color="mode ? '#1DA1F2' : ''"
                     :href="item.twitterLink"
                     v-on="on"
@@ -48,7 +46,6 @@
                     v-bind="attrs"
                     target="_blank"
                     v-show="item.githubLink"
-                    rounded
                 >
                     <v-icon>mdi-github</v-icon>
                 </v-btn>
@@ -57,7 +54,7 @@
                 <v-icon left color="white">mdi-github</v-icon> Github
             </span>
         </v-tooltip>
-    </v-card-actions>
+    </v-card>
 </template>
 
 <script>
