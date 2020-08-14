@@ -91,7 +91,7 @@ export default {
                 {
                     name: 'Joshua Galit',
                     position: 'CEO | Founder',
-                    speech: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo expedita illo dignissimos optio consequuntur met voluptatum?',
+                    speech: 'Building a network for the smartest people',
                     image: 'https://avatars0.githubusercontent.com/u/38458781?s=460&u=d2e21173ef861da3d8ca3a292398cbc0c6f7c000&v=4',
                     fbLink: 'https://www.facebook.com/profile.php?id=100016207784852',
                     githubLink: 'https://github.com/acatzk',
@@ -100,7 +100,7 @@ export default {
                 {
                     name: 'Jerome Villaruel',
                     position: 'CEO | Co-Founder',
-                    speech: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo expedita illo dignissimos optio consequuntur met voluptatum?',
+                    speech: 'The innovative power of generation',
                     image: 'https://avatars0.githubusercontent.com/u/26340308?s=460&u=bfa907f2fee8b19b3d7d9ebde07cfe0f33215b19&v=4',
                     fbLink: 'https://www.facebook.com/villarueljerome',
                     githubLink: 'https://github.com/veoscript',
@@ -109,7 +109,7 @@ export default {
                 {
                     name: 'Gilchrist Calunia',
                     position: 'Software Engineer',
-                    speech: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo expedita illo dignissimos optio consequuntur met voluptatum?',
+                    speech: 'Where innovation meets excellence',
                     image: 'https://avatars1.githubusercontent.com/u/65806779?s=460&u=03752090c3e22f46c1b7759b59daf1d871aada85&v=4',
                     fbLink: 'https://www.facebook.com/gilchrist.calunia',
                     githubLink: 'https://github.com/Gilchrist32',
@@ -118,7 +118,7 @@ export default {
                 {
                     name: 'Jayson Mendez',
                     position: 'Software Engineer',
-                    speech: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo expedita illo dignissimos optio consequuntur met voluptatum?',
+                    speech: 'Information for the safer world',
                     image: 'https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.0-9/110626580_1260436864295362_2053575148658777030_o.jpg?_nc_cat=109&_nc_sid=09cbfe&_nc_ohc=G_xO2srXQRwAX-ICkHp&_nc_ht=scontent.fmnl8-1.fna&oh=97ba20be646370268017e8a5110439ee&oe=5F578718',
                     fbLink: 'https://www.facebook.com/gilchrist.calunia',
                     githubLink: '',
@@ -127,7 +127,7 @@ export default {
                 {
                     name: 'Jerwin Gilo',
                     position: 'Software Engineer',
-                    speech: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo expedita illo dignissimos optio consequuntur met voluptatum?',
+                    speech: 'Leading the new Digital World',
                     image: 'https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.0-9/79453065_2793550230684284_3089180640969490432_o.jpg?_nc_cat=102&_nc_sid=09cbfe&_nc_ohc=87jX3QbsTwcAX98nc8K&_nc_ht=scontent.fmnl8-1.fna&oh=96cbd4cd3dfa34ec8ba096e64b4a41b3&oe=5F5798B3',
                     fbLink: 'https://www.facebook.com/menjhayz',
                     githubLink: '',
@@ -136,7 +136,7 @@ export default {
                 {
                     name: 'Christian Bongalan',
                     position: 'Software Engineer',
-                    speech: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo expedita illo dignissimos optio consequuntur met voluptatum?',
+                    speech: 'Committed for better future and freedom',
                     image: 'https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.0-9/74205777_446012632997493_777782435155804160_n.jpg?_nc_cat=108&_nc_sid=09cbfe&_nc_ohc=xKkfdmEKuOwAX9znXGI&_nc_ht=scontent.fmnl8-1.fna&oh=13f0f18b3846a2237a2befedc1730ed9&oe=5F5A1643',
                     fbLink: 'https://www.facebook.com/christianrommel.reyes.31',
                     githubLink: '',
@@ -145,7 +145,7 @@ export default {
                  {
                     name: 'Jey Rexon Libato',
                     position: 'Software Engineer',
-                    speech: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo expedita illo dignissimos optio consequuntur met voluptatum?',
+                    speech: 'The complete software solution',
                     image: 'https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.0-9/70303449_2185451815079356_3517642107357495296_n.jpg?_nc_cat=106&_nc_sid=174925&_nc_ohc=cebXuvq21CEAX8ulWJh&_nc_oc=AQlDqE_edM4oopBQYkB5TqG8Cdggt1rJmo3-kuS3bhiOat3xL8amrz4J_UVrmjiGc2M&_nc_ht=scontent.fmnl8-1.fna&oh=397115bbf81aad30eec502e485f206b8&oe=5F5A0A53',
                     fbLink: 'https://www.facebook.com/jeyrexonlibato16/',
                     githubLink: '',
