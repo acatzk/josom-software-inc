@@ -6,7 +6,7 @@
 export default {
     name: 'indicator',
 
-    mounted:function(){
+    mounted () {
         var vm = this
         window.addEventListener('scroll', function(e) {
             var scrollPos = window.scrollY
@@ -25,8 +25,13 @@ export default {
   position: fixed;
   top:0;
   left:0;
-  height: 5px;
-  background-color: red;
+  height: 4px;
+  border-radius: 20px;
   z-index: 999;
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
 </style>
