@@ -64,10 +64,10 @@
                             </v-flex>
 
                             <v-divider class="mr-6"></v-divider>
-                         
-                            <social-media-links :item="item"/>
 
                         </v-container>
+
+                        <social-media-links :item="item"/>
                         
                         
                     </v-card>
