@@ -1,6 +1,9 @@
 <template>
   <div class="home">
-    
+
+    <!-- Scroll Vertical Indicator -->
+    <scroll-indicator />
+
     <!-- Navigation Bar -->
     <nav-bar />
 
@@ -43,6 +46,8 @@ export default {
   name: 'Welcome',
 
   components: {
+
+    ScrollIndicator: () => import('@/components/mixins/ScrollIndicator'),
 
     NavBar: () => import('@/components/layouts/TheNavBar'),
 
