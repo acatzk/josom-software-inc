@@ -4,7 +4,7 @@
         class="mx-auto card-wrapper"
         max-width="100%"
         :dark="mode ? false : true"
-        :style="mode ? 'background-color: #f7f7f7;' : 'background-color: #363636;'"
+        :style="mode ? 'background-color: rgb(251 253 255);' : 'background-color: #363636;'"
     >
         <v-container>
             <v-flex class="text-center heading">

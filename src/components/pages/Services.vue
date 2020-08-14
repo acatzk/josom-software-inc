@@ -3,7 +3,7 @@
         class="mx-auto services"
         flat
         id="services"
-        :style="mode ? 'background-color: #f7f7f7;' : 'background-color: #363636;'"
+        :style="mode ? 'background-color: rgb(251 253 255);' : 'background-color: #363636;'"
         :dark="mode ? false : true"
     >
         <v-container>
