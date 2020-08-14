@@ -4,7 +4,7 @@
         clipped
         app
         :dark="mode ? false : true"
-        :style="mode ? 'background-color: #f7f7f7' : ''"
+        :style="mode ? 'background-color: rgb(251 253 255);' : ''"
     >
         <v-layout>
             <v-flex>
@@ -17,11 +17,14 @@
                         </v-list-item-avatar>
                     </v-list-item>
 
+
                     <v-list-item>
                         <v-list-item-content>
-                            <v-list-item-title class="title text-center">Josom Software, Inc.</v-list-item-title>
+                            <v-list-item-title class="text-center text-title font-weight-light">Josom Software, Inc.</v-list-item-title>
                         </v-list-item-content>
                     </v-list-item>
+
+                    <v-divider class="mx-2"></v-divider>
 
                     <v-list
                         nav
@@ -97,5 +100,10 @@ export default {
 <style scoped>
 .drawer {
     background-color: #f7f7f7 !important;
+}
+.text-title {
+    font-family: 'Teko', sans-serif !important;
+    font-stretch: expanded !important; 
+    font-size: 1.3rem !important;
 }
 </style>
