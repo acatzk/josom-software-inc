@@ -4,12 +4,11 @@
 
         <v-app-bar
             app
-            :color="mode ? '#f0f0f0' : ''"
+            :color="mode ? '#fff' : ''"
             flat
             dense
             clipped-left
             :dark="mode ? false : true"
-            hide-on-scroll
         >
             <v-btn 
                 icon
