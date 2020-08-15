@@ -54,6 +54,24 @@
                 <v-icon left color="white">mdi-github</v-icon> Github
             </span>
         </v-tooltip>
+        <v-tooltip top color="#ef8236">
+            <template v-slot:activator="{ on, attrs }">
+                <v-btn
+                    :href="item.stackoverflowLink"
+                    icon
+                    :color="mode ? '#ef8236' : ''"
+                    v-on="on"
+                    v-bind="attrs"
+                    target="_blank"
+                    v-show="item.stackoverflowLink"
+                >
+                    <v-icon class="iconify" data-icon="cib-stackoverflow"></v-icon>
+                </v-btn>
+            </template>
+            <span>
+                <v-icon left color="white" class="iconify" data-icon="cib-stackoverflow"></v-icon> Stackoverflow
+            </span>
+        </v-tooltip>
     </v-card>
 </template>
 
