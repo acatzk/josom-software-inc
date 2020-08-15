@@ -58,7 +58,7 @@
                             <v-flex class="mt-2 mr-5">
                                 <span class="company-name mb-1 text-uppercase font-weight-lighter">{{ item.name }}</span>
                                 <div class="subtitle text-uppercase font-weight-bold">{{ item.position }}</div>
-                                <v-card-subtitle class="text-justify text-capitalize">
+                                <v-card-subtitle class="text-center text-capitalize">
                                     {{ item.speech }}
                                 </v-card-subtitle>
                             </v-flex>
