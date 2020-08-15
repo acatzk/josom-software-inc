@@ -25,7 +25,7 @@
       <recommendations />
 
       <!-- Our Team -->
-      <our-team />
+      <team />
 
       <!-- Contact Us -->
       <contact-us />
@@ -63,7 +63,7 @@ export default {
 
     Recommendations: () => import('@/components/pages/Recommendations'),
 
-    OurTeam: () => import('@/components/pages/OurTeam'),
+    Team: () => import('@/components/pages/Team'),
 
     ContactUs: () => import('@/components/pages/ContactUs'),
 
