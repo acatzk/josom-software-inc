@@ -1,9 +1,9 @@
 {
     "projects": [
         {
-            "title": "Proin pharetra",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac diam ac ex",
-            "image": "https://picsum.photos/id/1039/600/600",
+            "title": "Twitter Clone",
+            "content": "Vuejs frontend, Hasura Graphql for backend, Firebase Authentication and Storage.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/vic-solution-admin.appspot.com/o/98190909_664701934311908_289760161898168320_n.jpg?alt=media&token=cafd6f9c-c581-4785-b3d7-0887645b2bf1",
             "projectYear": "2020"
         },
         {
