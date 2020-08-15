@@ -9,13 +9,15 @@
         <v-layout>
             <v-flex>
                 <v-list dense>
-                    <v-list-item class="justify-center">
-                        <v-list-item-avatar style="height: 100px; width: 100px;">
-                            <v-img 
-                                :src="getBrandLogo(mode)"
-                            ></v-img>
-                        </v-list-item-avatar>
+                    <v-list-item class="justify-center mt-12">
+                        <v-img 
+                            max-width="160"
+                            style="cursor: pointer;"
+                            @click.prevent="scroll" 
+                            :src="getBrandLogo()"
+                        ></v-img>
                     </v-list-item>
+                     
 
 
                     <v-list-item>
@@ -90,7 +92,7 @@ export default {
 
     methods: {
         getBrandLogo (mode) {
-            return mode ? require('@/assets/imgs/brand/logo-dark.png') : require('@/assets/imgs/brand/logo-light.png')
+            return require('@/assets/imgs/brand/brand-logo.png')
         }
     }
 

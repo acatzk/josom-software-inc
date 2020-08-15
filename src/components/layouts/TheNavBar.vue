@@ -22,14 +22,12 @@
 
             <v-spacer></v-spacer>
 
-            <v-list-item-avatar 
+            <v-img 
+                max-width="100"
+                style="cursor: pointer;"
                 @click.prevent="scroll" 
-                style="cursor: pointer; width: 20px;"
-            >
-                <v-img 
-                    :src="getbusinessLogo(mode)"
-                ></v-img>
-            </v-list-item-avatar>
+                :src="getbusinessLogo()"
+            ></v-img>
 
             <v-spacer></v-spacer>
 
@@ -74,8 +72,8 @@ export default {
     },
 
     methods: {
-        getbusinessLogo (mode) {
-            return mode ? require('@/assets/imgs/brand/logo-dark.png') : require('@/assets/imgs/brand/logo-light.png')
+        getbusinessLogo () {
+            return require('@/assets/imgs/brand/brand-logo.png')
         },
         scroll() {
             document.querySelector('#home').scrollIntoView({ behavior: 'smooth' })        
