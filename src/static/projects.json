@@ -1,46 +1,64 @@
 {
     "projects": [
         {
+            "title": "Inventory Management and POS System",
+            "content": "Leyeco IV Leyte Electric Cooperative IV, Inc. Written in C# and SQL Server.",
+            "image": "https://jeromevillaruel.netlify.app/img/inventorysystem.5b609bb6.png"
+        },
+        {
+            "title": "Air Class Solution, Inc.",
+            "content": "Vuejs frontend and Hasura Graphql for backend, PosgreSQL, Firebase Authentication and Firebase Storage",
+            "image": "https://firebasestorage.googleapis.com/v0/b/vic-solution-admin.appspot.com/o/1.JPG?alt=media&token=ea736538-e383-4798-9306-f821531ab684"
+        },
+        {
+            "title": "Employee Information System",
+            "content": "Program was Implemented in (SPMI) Specialty Pulp Manufacturing, Inc. - Written in Visual Basic and SQL Server",
+            "image": "https://jeromevillaruel.netlify.app/img/empinfosys.0524861c.png"
+        },
+        {
+            "title": "Great Outdoor Adventure",
+            "content": "This is landing page written in modern CSS3 and HTML5",
+            "image": "https://firebasestorage.googleapis.com/v0/b/vic-solution-admin.appspot.com/o/97445808_2549831308589824_8970811067743600640_n.png?alt=media&token=b51099e3-4027-4e3f-908c-b822c8c09b27"
+        },
+        {
+            "title": "Parking Lot Monitoring System",
+            "content": "This program is available and you can use this to your parking lot area - Written in Visual Basic and SQL Server",
+            "image": "https://jeromevillaruel.netlify.app/img/parkingmonitoring.859294cd.png"
+        },
+        {
+            "title": "Daily Time Record",
+            "content": "Daily Time Record written in Visual Basic and SQL Server to record the employees time activities.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/vic-solution-admin.appspot.com/o/97414226_2521136174656232_4971303252164345856_n.jpg?alt=media&token=71297302-d2ca-433c-ab6b-0726dfb38cb0"
+        },
+        {
+            "title": "GoRehab Center",
+            "content": "Rehabilitation Center Management System Written in PHP and MySQL",
+            "image": "https://jeromevillaruel.netlify.app/img/gorehab.db64694c.png"
+        },
+        {
             "title": "Twitter Clone",
-            "content": "Vuejs frontend, Hasura Graphql for backend, Firebase Authentication and Storage.",
-            "image": "https://firebasestorage.googleapis.com/v0/b/vic-solution-admin.appspot.com/o/98190909_664701934311908_289760161898168320_n.jpg?alt=media&token=cafd6f9c-c581-4785-b3d7-0887645b2bf1",
-            "projectYear": "2020"
+            "content": "Vuejs frontend, Hasura Graphql for backend, PosgreSQL, Firebase Authentication and Storage.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/vic-solution-admin.appspot.com/o/98190909_664701934311908_289760161898168320_n.jpg?alt=media&token=cafd6f9c-c581-4785-b3d7-0887645b2bf1"
         },
         {
-            "title": "Cras pharetra",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi malesuada",
-            "image": "https://picsum.photos/id/1042/600/600",
-            "projectYear": "2020"
+            "title": "Automated Enrollment System",
+            "content": "This program was implemented in DAFENHS Don Agustin F. Escano National High School",
+            "image": "https://jeromevillaruel.netlify.app/img/automatedenrollment.85b2e690.png"
         },
         {
-            "title": "Proin vulputate",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla",
-            "image": "https://picsum.photos/id/1044/600/600",
-            "projectYear": "2020"
+            "title": "Judyzada Ecommerce",
+            "content": "Created using Vuejs frontend and Hasura Graphql backend.",
+            "image": "https://firebasestorage.googleapis.com/v0/b/vic-solution-admin.appspot.com/o/98030141_3227694890574643_3039246810020315136_n.jpg?alt=media&token=ebca9ac3-5887-4644-a80d-0020c653dfb2"
         },
         {
-            "title": "Maecenas feugiat",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet",
-            "image": "https://picsum.photos/id/1057/600/600",
-            "projectYear": "2020"
+            "title": "KPHN Coffee Shop Inventory System",
+            "content": "This program is under construction. Available for all coffee shops for free.",
+            "image": "https://jeromevillaruel.netlify.app/img/kphn.113059c5.png"
         },
         {
-            "title": "Donec commodo",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu condimentum",
-            "image": "https://picsum.photos/id/1063/600/600",
-            "projectYear": "2020"
-        },
-        {
-            "title": "In bibendum u",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae",
-            "image": "https://picsum.photos/id/1076/600/600",
-            "projectYear": "2020"
-        },
-        {
-            "title": "Phasellus iac",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis quam ",
-            "image": "https://picsum.photos/id/1083/600/600",
-            "projectYear": "2020"
+            "title": "Teacher Evaluation System",
+            "content": "This system is created using PHP and MySQL",
+            "image": "https://jeromevillaruel.netlify.app/img/TES.19c972e1.png"
         }
     ]
 }
