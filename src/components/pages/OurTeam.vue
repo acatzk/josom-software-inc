@@ -95,7 +95,8 @@ export default {
                     image: 'https://avatars0.githubusercontent.com/u/38458781?s=460&u=d2e21173ef861da3d8ca3a292398cbc0c6f7c000&v=4',
                     fbLink: 'https://www.facebook.com/profile.php?id=100016207784852',
                     githubLink: 'https://github.com/acatzk',
-                    twitterLink: 'https://twitter.com/angryboy_19'
+                    twitterLink: 'https://twitter.com/angryboy_19',
+                    stackoverflowLink: 'https://stackoverflow.com/users/14108225/joshua-galit'
                 },
                 {
                     name: 'Jerome Villaruel',
