@@ -31,7 +31,7 @@
       <contact-us />
 
       <!-- Our Satisfied Client -->
-      <our-clients />
+      <clients />
 
       <!-- Footer Bar -->
       <foot-bar />
@@ -67,7 +67,7 @@ export default {
 
     ContactUs: () => import('@/components/pages/ContactUs'),
 
-    OurClients: () => import('@/components/pages/OurClients'),
+    Clients: () => import('@/components/pages/Clients'),
 
     FootBar: () => import('@/components/layouts/TheFootBar')
 
