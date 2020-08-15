@@ -1,0 +1,36 @@
+{
+    "recommendations": [
+        {
+            "id": 0,
+            "imageUrl": "https://res.cloudinary.com/ameo/image/upload/v1498843587/kTcPaQR_x77hor.jpg"
+        },
+        {
+            "id": 1,
+            "imageUrl": "https://unsplash.it/400/300?image=456"
+        },
+        {
+            "id": 2,
+            "imageUrl": "https://unsplash.it/400/300?image=222"
+        },
+        {
+            "id": 3,
+            "imageUrl": "https://unsplash.it/400/300?image=1003"
+        },
+        {
+            "id": 4,
+            "imageUrl": "https://unsplash.it/400/300?image=940"
+        },
+        {
+            "id": 5,
+            "imageUrl": "https://unsplash.it/400/300?image=944"
+        },
+        {
+            "id": 6,
+            "imageUrl": "https://source.unsplash.com/mEr7U5yfYt8/400x300"
+        },
+        {
+            "id": 7,
+            "imageUrl": "https://unsplash.it/400/300?image=1041"
+        }
+    ]
+}
