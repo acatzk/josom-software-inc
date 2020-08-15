@@ -76,13 +76,13 @@ export default {
         text-align: center;
 
         h2 {
-            font-size: 4rem;
-            font-family: 'Teko', sans-serif;
+            font-size: 4rem !important;
+            font-family: 'Teko', sans-serif !important;
             text-shadow: 2px 3px #000000;
             text-transform: uppercase;
-            margin: 0;
+            margin: 0 !important; 
             @media (max-width: 767px) {
-                font-size: 3rem;
+                font-size: 3rem !important;
             }
         }
 
