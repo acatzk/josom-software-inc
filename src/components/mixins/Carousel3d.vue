@@ -1,30 +1,42 @@
 <template>
     <div id="carousel">
         <carousel-3d :autoplay="true" :autoplay-timeout="2400">
-            <slide :index="0"><img src="https://res.cloudinary.com/ameo/image/upload/v1498843587/kTcPaQR_x77hor.jpg"/></slide>
-            <slide :index="1"><img src="https://unsplash.it/400/300?image=456"/></slide>
-            <slide :index="2"><img src="https://unsplash.it/400/300?image=222"/></slide>
-            <slide :index="3"><img src="https://unsplash.it/400/300?image=1003"/></slide>
-            <slide :index="4"><img src="https://unsplash.it/400/300?image=940"/></slide>
-            <slide :index="5"><img src="https://unsplash.it/400/300?image=944"/></slide>
-            <slide :index="6"><img src="https://source.unsplash.com/mEr7U5yfYt8/400x300"/></slide>
-            <slide :index="7"><img src="https://unsplash.it/400/300?image=1041"/></slide>
+            <div v-for="item in items" :key="item.id">
+                <slide :index="item.id">
+                    <img :src="item.imageUrl"/>
+                </slide>
+            </div>
         </carousel-3d>
     </div>
 </template>
 
 <script>
-import { Carousel3d, Slide } from 'vue-carousel-3d';
+
+
+import { Carousel3d, Slide } from 'vue-carousel-3d'
+
+import recommendations from '@/static/recommendations'
+
 export default {
+
     name: 'CarouselOverflow',
+
     data() {
         return {
+            items: []
         }
     },
+
     components: {
         Carousel3d,
         Slide
+    },
+
+    created () {
+        let recommendData = recommendations.recommendations
+        return this.items.push(...recommendData)
     }
+
 }
 </script>
 
