@@ -23,32 +23,20 @@
                         <v-card
                             class="mx-auto"
                             max-width="500"
+                            height="400"
                         >
                             <v-img
                                 height="200px"
                                 :src="item.image"
-                                class="white--text align-end"
-                                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                                :lazy-src="item.image"
                             >
-                                <h4 class="ml-3">Year {{  item.projectYear}}</h4>
                             </v-img>
                             
-                            <v-card-title>{{ item.title }}</v-card-title>
-
+                            <v-card-title class="text-left">{{ item.title }}</v-card-title>
+                        
                             <v-card-subtitle class="text-justify">
                                 {{ item.content }}
                             </v-card-subtitle>
-
-                            <v-card-actions>
-                                <v-spacer></v-spacer>
-                                <v-btn 
-                                    depressed
-                                    small
-                                    text
-                                >
-                                <v-icon left>mdi-web</v-icon> Demo
-                                </v-btn>
-                            </v-card-actions>
                         </v-card>
                     </template>
                 </horizontal-list>
