@@ -1,18 +1,6 @@
 {
     "projects": [
         {
-            "title": "ESL Learning Center",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non sagittis leo.",
-            "image": "https://avatars0.githubusercontent.com/u/26340308?s=460&u=bfa907f2fee8b19b3d7d9ebde07cfe0f33215b19&v=4",
-            "projectYear": "2020"
-        },
-        {
-            "title": "Joshua Galit",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id mollis erat.",
-            "image": "https://avatars0.githubusercontent.com/u/38458781?s=460&u=d2e21173ef861da3d8ca3a292398cbc0c6f7c000&v=4",
-            "projectYear": "2020"
-        },
-        {
             "title": "Proin pharetra",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac diam ac ex",
             "image": "https://picsum.photos/id/1039/600/600",
