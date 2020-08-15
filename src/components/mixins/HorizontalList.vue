@@ -43,6 +43,12 @@ import Vue from 'vue'
 
 import { mapState } from 'vuex'
 
+import { toastAlertStatus } from '@/utils'
+
+import axios from 'axios'
+
+import projects from '@/static/projects.json'
+
 export default Vue.extend({
 
     name: 'horizontal-list',
@@ -57,51 +63,13 @@ export default Vue.extend({
 
     data() {
         return {
-            items: [
-                {
-                title: 'Proin pharetra',
-                content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac diam ac ex',
-                image: 'https://picsum.photos/id/1039/600/600',
-                projectYear: '2020'
-                },
-                {
-                title: 'Cras pharetra',
-                content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi malesuada ',
-                image: 'https://picsum.photos/id/1042/600/600',
-                projectYear: '2020'
-                },
-                {
-                title: 'Proin vulputate',
-                content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla',
-                image: 'https://picsum.photos/id/1044/600/600',
-                projectYear: '2020'
-                },
-                {
-                title: 'Maecenas feugiat ',
-                content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet ',
-                image: 'https://picsum.photos/id/1057/600/600',
-                projectYear: '2020'
-                },
-                {
-                title: 'Donec commodo',
-                content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu condimentum',
-                image: 'https://picsum.photos/id/1063/600/600',
-                projectYear: '2020'
-                },
-                {
-                title: 'In bibendum u',
-                content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae',
-                image: 'https://picsum.photos/id/1076/600/600',
-                projectYear: '2020'
-                },
-                {
-                title: 'Phasellus iac',
-                content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis quam ',
-                image: 'https://picsum.photos/id/1083/600/600',
-                projectYear: '2020'
-                },
-            ]
+            items: []
         }
+    },
+
+    created () {
+        let projectData = projects.projects
+        return this.items.push(...projectData)
     }
 })
 </script>
