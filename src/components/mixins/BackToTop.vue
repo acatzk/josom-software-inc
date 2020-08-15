@@ -13,7 +13,7 @@
             bottom 
             right 
             class="elevation-20"
-            :color="mode ? 'primary' : 'error'" 
+            color="primary"
             @click="toTop"
         >
 

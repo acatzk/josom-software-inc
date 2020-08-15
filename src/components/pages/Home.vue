@@ -10,8 +10,9 @@
         <br>
         <v-btn
             depressed
-            :color="mode ? 'blue' : 'error'"
-            class="white--text mt-5"
+            dark
+            color="primary"
+            class="mt-5"
             x-large
             @click.prevent="scroll"
             rounded
@@ -88,7 +89,7 @@ export default {
 
         p.subtitle {
             font-size: 1.7rem;
-            margin: 0;
+            margin: 0;  
             @media (max-width: 767px) {
                 font-size: 1rem;
             }
