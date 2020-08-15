@@ -16,7 +16,7 @@
                 </v-card-text>
             </v-flex>
 
-            <vue-horizontal-list :items="items" class="mx-4">
+            <horizontal-list :items="items" class="mx-4">
                 <template v-slot:default="{item}">
                     <v-card
                         class="mx-auto elevation-7"
@@ -72,7 +72,7 @@
                         
                     </v-card>
                 </template>
-            </vue-horizontal-list>
+            </horizontal-list>
 
         </v-container>
     </v-card>
@@ -98,7 +98,7 @@ export default {
     },
 
     components: {
-        VueHorizontalList: () => import('vue-horizontal-list'),
+        HorizontalList: () => import('@/components/mixins/HorizontalList'),
         SocialMediaLinks: () => import('@/components/mixins/SocialMediaLinks')
     },
     
