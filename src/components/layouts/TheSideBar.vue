@@ -22,7 +22,7 @@
 
                     <v-list-item>
                         <v-list-item-content>
-                            <v-list-item-title class="text-center text-title font-weight-light">Josom Software, Inc.</v-list-item-title>
+                            <v-list-item-title class="text-center text-title font-weight-normals">Josom Software, Inc.</v-list-item-title>
                         </v-list-item-content>
                     </v-list-item>
 
