@@ -11,7 +11,13 @@
                 </v-card-text>
             </v-flex>
 
-            <carousel3d />
+            <carousel-3d :autoplay="true" :autoplay-timeout="2400">
+                <div v-for="(item, index) in items" :key="index">
+                    <slide :index="item.id">
+                        <img :src="item.imageUrl"/>
+                    </slide>
+                </div>
+            </carousel-3d>
 
         </v-container>
 
@@ -22,15 +28,24 @@
 
 import { mapState } from 'vuex'
 
+import recommendations from '@/static/recommendations'
+
 export default {
     name: 'recommendations',
 
-    components: {
-        Carousel3d: () => import('@/components/mixins/Carousel3d')
+    data () {
+        return {
+            items: []
+        }
     },
 
     computed: {
         ...mapState(['mode'])
+    },
+
+    created () {
+        let recommendData = recommendations.recommendations
+        return this.items.push(...recommendData)
     }
 }
 </script>
@@ -51,5 +66,9 @@ h2 {
     text-transform: uppercase;
     margin: 0;
     text-shadow: 2px 2px rgb(39, 39, 39);
+}
+.carousel-3d-slide {
+    height: auto !important;
+    background-color: rgba(0, 0, 0, 0.25) !important;
 }
 </style>
