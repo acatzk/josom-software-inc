@@ -98,7 +98,8 @@ export default {
     }
 
     .particles {
-        background-image: linear-gradient(rgba(80, 80, 80, 0.5), rgba(0, 0, 0, .5)), url("../../assets/imgs/home/home-bg.jpg");
+        background-image: linear-gradient(rgba(80, 80, 80, 0.5), 
+                        rgba(0, 0, 0, .5)), url("../../assets/imgs/home/home-bg-4.jpg");
         background-size: cover;
         width: 100%;
     }
