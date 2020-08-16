@@ -14,7 +14,7 @@
             <carousel-3d :autoplay="true" :autoplay-timeout="2400">
                 <div v-for="(item, index) in items" :key="index">
                     <slide :index="item.id">
-                        <img :src="item.imageUrl"/>
+                        <img :src="require('./../../assets/imgs/recommends/user-quote-1.jpg')"/>
                     </slide>
                 </div>
             </carousel-3d>
