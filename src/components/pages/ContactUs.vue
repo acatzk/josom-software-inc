@@ -72,6 +72,17 @@
 
                         <v-col cols="12" class="text-center">
                             <v-btn
+                                depressed
+                                rounded
+                                large
+                                text
+                                class="mr-1"
+                                @click="$refs.form.reset()"
+                                color="grey"
+                            >
+                                Cancel <v-icon right>mdi-reload</v-icon>
+                            </v-btn>
+                            <v-btn
                                 color="success"
                                 depressed
                                 rounded
@@ -79,7 +90,7 @@
                                 @click="onSendMessage"
                                 :loading="loading"
                             >
-                                SEND MESSAGES <v-icon right>mdi-send</v-icon>
+                                SEND <v-icon right>mdi-send</v-icon>
                             </v-btn>
                         </v-col>
                     </v-row>
