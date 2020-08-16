@@ -63,7 +63,7 @@ export default {
 
     components: {
         CardCarousel: () => import('@/components/mixins/CardCarousel'),
-        HorizontalList: () => import('@/components/mixins/HorizontalList')
+        HorizontalList: () => import('vue-horizontal-list')
     },
 
     computed: {

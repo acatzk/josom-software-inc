@@ -52,7 +52,7 @@ export default {
     },
 
     components: {
-        HorizontalList: () => import('@/components/mixins/HorizontalList')
+        HorizontalList: () => import('vue-horizontal-list')
     },
 
     created () {
