@@ -1,5 +1,5 @@
 <template>
-    <div class="wrap-banner" id="home">
+    <div class="wrap-banner">
       <div class="main-title">
         <h2 class="text-uppercase">
           Making great things possible
@@ -71,6 +71,7 @@ export default {
     justify-content: center;
     align-items: center;
     color: #fff;
+    height: 93vh;
 
     .main-title {
         position: absolute;
@@ -97,7 +98,7 @@ export default {
     }
 
     .particles {
-        background-image: linear-gradient(rgba(80, 80, 80, 0.5), rgba(0, 0, 0, .5)), url("../../assets/imgs/home.jpg");
+        background-image: linear-gradient(rgba(80, 80, 80, 0.5), rgba(0, 0, 0, .5)), url("../../assets/imgs/home/home-bg.jpg");
         background-size: cover;
         width: 100%;
     }
