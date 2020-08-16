@@ -22,7 +22,7 @@
             >
                 <v-col 
                     cols="12" 
-                    sm="4" 
+                    md="4" 
                     v-for="service in services" :key="service.number" 
                 >
                     <v-card
@@ -89,8 +89,8 @@ export default {
 .services {
     border-radius: 0 !important;
     -moz-webkit-border-radius: 0;
-    min-height: 100vh;
     padding-top: 50px;
+    min-height: 100vh;
 }
 
 h2 {
@@ -117,7 +117,7 @@ h2 {
 }
 
 .bg-image-03 {
-    background-image:  linear-gradient(rgba(80, 80, 80, 0.7), rgba(0, 0, 0, .6)), url('../../assets/imgs/docks.jpg');
+    background-image:  linear-gradient(rgba(80, 80, 80, 0.7), rgba(0, 0, 0, 0.6)), url('../../assets/imgs/docks.jpg');
     background-size: cover;
     width: 100%;
     height: 70vh;
