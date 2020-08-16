@@ -67,7 +67,7 @@
 
                         </v-container>
 
-                        <social-media-links :item="item"/>
+                        <social-link-buttons :item="item"/>
                         
                         
                     </v-card>
@@ -99,7 +99,7 @@ export default {
 
     components: {
         HorizontalList: () => import('@/components/mixins/HorizontalList'),
-        SocialMediaLinks: () => import('@/components/mixins/SocialMediaLinks')
+        SocialLinkButtons: () => import('@/components/mixins/SocialLinkButtons')
     },
     
     created () {
