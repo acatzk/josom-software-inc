@@ -101,7 +101,7 @@ h2 {
 }
 
 .bg-image-01 {
-    background-image:  linear-gradient(rgba(80, 80, 80, 0.7), rgba(0, 0, 0, .6)), url('../../assets/imgs/home.jpg');
+    background-image:  linear-gradient(rgba(80, 80, 80, 0.7), rgba(0, 0, 0, .6)), url('../../assets/imgs/home/home-bg-1.jpg');
     background-size: cover;
     width: 100%;
     height: 70vh;
@@ -109,7 +109,7 @@ h2 {
 }
 
 .bg-image-02 {
-    background-image:  linear-gradient(rgba(80, 80, 80, 0.7), rgba(0, 0, 0, .6)), url('../../assets/imgs/code.jpg');
+    background-image:  linear-gradient(rgba(80, 80, 80, 0.7), rgba(0, 0, 0, .6)), url('../../assets/imgs/home/home-bg-2.jpg');
     background-size: cover;
     width: 100%;
     height: 70vh;
@@ -117,7 +117,7 @@ h2 {
 }
 
 .bg-image-03 {
-    background-image:  linear-gradient(rgba(80, 80, 80, 0.7), rgba(0, 0, 0, 0.6)), url('../../assets/imgs/docks.jpg');
+    background-image:  linear-gradient(rgba(80, 80, 80, 0.7), rgba(0, 0, 0, 0.6)), url('../../assets/imgs/home/home-bg-5.jpg');
     background-size: cover;
     width: 100%;
     height: 70vh;
