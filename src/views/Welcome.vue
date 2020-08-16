@@ -1,8 +1,8 @@
 <template>
-  <div class="home">
+  <div id="home">
 
     <!-- Scroll Vertical Indicator -->
-    <scroll-indicator id="home"/>
+    <scroll-indicator />
 
     <!-- Navigation Bar -->
     <nav-bar />
