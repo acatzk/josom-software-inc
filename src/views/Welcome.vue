@@ -2,7 +2,7 @@
   <div class="home">
 
     <!-- Scroll Vertical Indicator -->
-    <scroll-indicator />
+    <scroll-indicator id="home"/>
 
     <!-- Navigation Bar -->
     <nav-bar />
