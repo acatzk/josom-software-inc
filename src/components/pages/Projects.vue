@@ -16,7 +16,6 @@
                 </v-card-text>
             </v-flex>
 
-            <!-- <card-carousel /> -->
             <v-container>
                 <horizontal-list :items="items">
                     <template v-slot:default="{ item }">
@@ -62,7 +61,6 @@ export default {
     },
 
     components: {
-        CardCarousel: () => import('@/components/mixins/CardCarousel'),
         HorizontalList: () => import('vue-horizontal-list')
     },
 
