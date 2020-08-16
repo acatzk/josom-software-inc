@@ -4,7 +4,7 @@
 
     <router-view /> <!-- DYNAMIC WEB PAGES LOAD -->
 
-    <back-to-top /> <!-- BACK TO TOP BUTTON -->
+    <scroll-to-top /> <!-- BACK TO TOP BUTTON -->
 
   </v-app>
 
@@ -21,7 +21,7 @@ export default {
   name: 'app',
 
   components: {
-    BackToTop: () => import('@/components/mixins/BackToTop')
+    ScrollToTop: () => import('@/components/mixins/ScrollToTop')
   },
 
   computed: {
