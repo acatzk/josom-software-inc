@@ -4,7 +4,7 @@
         clipped
         app
         :dark="mode ? false : true"
-        :style="mode ? 'background-color: rgb(242 247 253);' : ''"
+        :class="mode ? 'nav-drawer' : undefined"
     >
         <v-layout>
             <v-flex>
@@ -17,8 +17,7 @@
                             :src="getBrandLogo()"
                         ></v-img>
                     </v-list-item>
-                     
-
+                    
 
                     <v-list-item>
                         <v-list-item-content>
@@ -26,7 +25,7 @@
                         </v-list-item-content>
                     </v-list-item>
 
-                    <v-divider class="mx-2"></v-divider>
+                    <v-divider class="mx-4"></v-divider>
 
                     <v-list
                         nav
@@ -100,12 +99,13 @@ export default {
 </script>
 
 <style scoped>
-.drawer {
-    background-color: #f7f7f7 !important;
-}
 .text-title {
     font-family: 'Teko', sans-serif !important;
     font-stretch: expanded !important; 
     font-size: 1.3rem !important;
+}
+.nav-drawer {
+    /* rgb(242 247 253) */
+    background-color: #E3F2FD;
 }
 </style>
