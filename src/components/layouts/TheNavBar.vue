@@ -4,11 +4,11 @@
 
         <v-app-bar
             app
-            :color="mode ? '#fff' : ''"
             flat
             dense
             clipped-left
             :dark="mode ? false : true"
+            :class="mode ? 'light-style' : 'dark-style'"
         >
             <v-btn 
                 icon
@@ -23,7 +23,7 @@
             <v-spacer></v-spacer>
 
             <v-img 
-                max-width="100"
+                max-width="90"
                 style="cursor: pointer;"
                 @click.prevent="scroll" 
                 :src="getbusinessLogo()"
@@ -81,3 +81,13 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.light-style {
+    background: #fff !important;
+    border-top: 4px solid rgb(211, 211, 211);
+}
+.dark-style {
+    border-top: 4px solid rgb(94, 94, 94);
+}
+</style>
