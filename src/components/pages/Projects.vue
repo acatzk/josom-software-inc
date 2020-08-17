@@ -23,6 +23,8 @@
                             class="mx-auto"
                             max-width="500"
                             height="400"
+                            flat
+                            outlined
                         >
                             <v-img
                                 height="200px"
