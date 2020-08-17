@@ -19,8 +19,9 @@
             <horizontal-list :items="items" class="mx-4">
                 <template v-slot:default="{item}">
                     <v-card
-                        class="mx-auto elevation-7"
+                        class="mx-auto elevation-3"
                         max-width="500"
+                        flat
                     >
                         <v-container class="text-center">
                             <v-flex>
