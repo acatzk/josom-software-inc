@@ -105,7 +105,6 @@ export default {
     font-size: 1.3rem !important;
 }
 .nav-drawer {
-    /* rgb(242 247 253) */
-    background-color: #E3F2FD;
+    background-color: rgb(235 243 253);
 }
 </style>
