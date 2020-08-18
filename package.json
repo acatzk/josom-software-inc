@@ -21,6 +21,7 @@
     "subscriptions-transport-ws": "^0.9.17",
     "sweetalert2": "^9.17.1",
     "vue": "^2.6.11",
+    "vue-aos": "^1.0.1",
     "vue-apollo": "^3.0.4",
     "vue-carousel-3d": "^0.2.0",
     "vue-fb-customer-chat": "^0.2.0",
