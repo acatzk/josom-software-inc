@@ -5,6 +5,7 @@
         app
         :dark="mode ? false : true"
         :class="mode ? 'nav-drawer' : undefined"
+        fixed
     >
         <v-layout>
             <v-flex>
