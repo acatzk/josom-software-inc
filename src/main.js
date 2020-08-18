@@ -6,7 +6,6 @@ import vuetify from '@/plugins/vuetify'
 import VueFbCustomerChat from 'vue-fb-customer-chat'
 import VueParticles from 'vue-particles'
 import Carousel3d from 'vue-carousel-3d'
-import VuePreview from 'vue-preview'
 import { apolloProvider } from '@/services'
 
 
@@ -19,7 +18,6 @@ Vue.use(VueFbCustomerChat, {
 
 Vue.use(VueParticles)
 Vue.use(Carousel3d)
-Vue.use(VuePreview)
 
 
 Vue.config.productionTip = false
