@@ -22,7 +22,7 @@
             >
                 <v-col 
                     cols="12" 
-                    md="4" 
+                    sm="4" 
                     v-for="service in services" :key="service.number" 
                 >
                     <v-card
@@ -104,7 +104,7 @@ h2 {
     background-image:  linear-gradient(rgba(80, 80, 80, 0.7), rgba(0, 0, 0, .6)), url('../../assets/imgs/home/home-bg-1.jpg');
     background-size: cover;
     width: 100%;
-    height: 70vh;
+    min-height: 70vh;
     font-family: 'Teko', sans-serif;
 }
 
@@ -112,7 +112,7 @@ h2 {
     background-image:  linear-gradient(rgba(80, 80, 80, 0.7), rgba(0, 0, 0, .6)), url('../../assets/imgs/home/home-bg-2.jpg');
     background-size: cover;
     width: 100%;
-    height: 70vh;
+    min-height: 70vh;
     font-family: 'Teko', sans-serif;
 }
 
@@ -120,7 +120,7 @@ h2 {
     background-image:  linear-gradient(rgba(80, 80, 80, 0.7), rgba(0, 0, 0, 0.6)), url('../../assets/imgs/home/home-bg-5.jpg');
     background-size: cover;
     width: 100%;
-    height: 70vh;
+    min-height: 70vh;
     font-family: 'Teko', sans-serif;
 }
 
