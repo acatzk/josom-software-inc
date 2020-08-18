@@ -7,6 +7,7 @@ import VueFbCustomerChat from 'vue-fb-customer-chat'
 import VueParticles from 'vue-particles'
 import Carousel3d from 'vue-carousel-3d'
 import { apolloProvider } from '@/services'
+import AOS from 'aos'
 
 
 Vue.use(VueFbCustomerChat, {
@@ -22,10 +23,16 @@ Vue.use(Carousel3d)
 
 Vue.config.productionTip = false
 
+import 'aos/dist/aos.css'
+
+
 new Vue({
   router,
   store,
   vuetify,
   apolloProvider,
+  created () {
+    AOS.init()
+  },
   render: h => h(App)
 }).$mount("#app")
