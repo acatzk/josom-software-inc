@@ -77,16 +77,16 @@
 
 <script>
 
-import { mapState } from 'vuex'
+    import { mapState } from 'vuex'
 
-export default {
-    name: 'social-media-links',
+    export default {
+        name: 'social-media-links',
 
-    props: ['item'],
+        props: ['item'],
 
-    computed: {
-        ...mapState(['mode'])
+        computed: {
+            ...mapState(['mode'])
+        }
+
     }
-
-}
 </script>

@@ -31,38 +31,38 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
-export default {
-  data: () => ({
-    links: [
-      {
-        icon: 'mdi-facebook',
-        link: 'https://facebook.com'
-      },
-      {
-        icon: 'mdi-twitter',
-        link: 'https://twitter.com'
-      },
-      {
-        icon: 'mdi-linkedin',
-        link: 'https://linkedin.com'
-      },
-      {
-        icon: 'mdi-instagram',
-        link: 'https://instagram.com'
-      },
-      {
-        icon: 'mdi-github',
-        link: 'https://github.com'
-      },
-      {
-        icon: 'cib-stackoverflow',
-        link: 'https://stackoverflow.com'
-      }
-    ],
-  }),
-  computed: {
-    ...mapState(['mode'])
+  import { mapState } from 'vuex'
+  export default {
+    data: () => ({
+      links: [
+        {
+          icon: 'mdi-facebook',
+          link: 'https://facebook.com'
+        },
+        {
+          icon: 'mdi-twitter',
+          link: 'https://twitter.com'
+        },
+        {
+          icon: 'mdi-linkedin',
+          link: 'https://linkedin.com'
+        },
+        {
+          icon: 'mdi-instagram',
+          link: 'https://instagram.com'
+        },
+        {
+          icon: 'mdi-github',
+          link: 'https://github.com'
+        },
+        {
+          icon: 'cib-stackoverflow',
+          link: 'https://stackoverflow.com'
+        }
+      ],
+    }),
+    computed: {
+      ...mapState(['mode'])
+    }
   }
-}
 </script>

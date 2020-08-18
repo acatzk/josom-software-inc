@@ -10,24 +10,24 @@
 
 <script>
 
-export default {
+    export default {
 
-    name: 'ScrollLink',
+        name: 'ScrollLink',
 
-    props: ['href'],
+        props: ['href'],
 
-    methods: {
+        methods: {
 
-        scroll() {
+            scroll() {
 
-            document.querySelector(this.href)
-                    .scrollIntoView({ behavior: 'smooth' })
-                    
+                document.querySelector(this.href)
+                        .scrollIntoView({ behavior: 'smooth' })
+                        
+            }
+
         }
 
     }
-
-}
 
 </script>
 

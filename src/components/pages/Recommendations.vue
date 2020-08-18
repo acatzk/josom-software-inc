@@ -26,28 +26,28 @@
 
 <script>
 
-import { mapState } from 'vuex'
+    import { mapState } from 'vuex'
 
-import recommendations from '@/static/recommendations'
+    import recommendations from '@/static/recommendations'
 
-export default {
-    name: 'recommendations',
+    export default {
+        name: 'recommendations',
 
-    data () {
-        return {
-            items: []
+        data () {
+            return {
+                items: []
+            }
+        },
+
+        computed: {
+            ...mapState(['mode'])
+        },
+
+        created () {
+            let recommendData = recommendations.recommendations
+            return this.items.push(...recommendData)
         }
-    },
-
-    computed: {
-        ...mapState(['mode'])
-    },
-
-    created () {
-        let recommendData = recommendations.recommendations
-        return this.items.push(...recommendData)
     }
-}
 </script>
 
 <style scoped>

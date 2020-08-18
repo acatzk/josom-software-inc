@@ -42,37 +42,37 @@
 </template>
 
 <script>
-export default {
-  name: 'Welcome',
+  export default {
+    name: 'Welcome',
 
-  components: {
+    components: {
 
-    ScrollIndicator: () => import('@/components/mixins/ScrollIndicator'),
+      ScrollIndicator: () => import('@/components/mixins/ScrollIndicator'),
 
-    NavBar: () => import('@/components/layouts/TheNavBar'),
+      NavBar: () => import('@/components/layouts/TheNavBar'),
 
-    MainBar: () => import('@/components/layouts/TheMainBar'),
+      MainBar: () => import('@/components/layouts/TheMainBar'),
 
-    Home: () => import('@/components/pages/Home'),
+      Home: () => import('@/components/pages/Home'),
 
-    About: () => import('@/components/pages/About'),
+      About: () => import('@/components/pages/About'),
 
-    Services: () => import('@/components/pages/Services'),
+      Services: () => import('@/components/pages/Services'),
 
-    Projects: () => import('@/components/pages/Projects'),
+      Projects: () => import('@/components/pages/Projects'),
 
-    Recommendations: () => import('@/components/pages/Recommendations'),
+      Recommendations: () => import('@/components/pages/Recommendations'),
 
-    Team: () => import('@/components/pages/Team'),
+      Team: () => import('@/components/pages/Team'),
 
-    ContactUs: () => import('@/components/pages/ContactUs'),
+      ContactUs: () => import('@/components/pages/ContactUs'),
 
-    Clients: () => import('@/components/pages/Clients'),
+      Clients: () => import('@/components/pages/Clients'),
 
-    FootBar: () => import('@/components/layouts/TheFootBar')
+      FootBar: () => import('@/components/layouts/TheFootBar')
 
+    }
   }
-}
 </script>
 
 <style scoped lang="scss" src="@/assets/scss/welcome.scss"></style>

@@ -105,82 +105,83 @@
 
 <script>
 
-import { mapState } from 'vuex'
+    import { mapState } from 'vuex'
 
-import { toastAlertStatus, required, emailRules } from '@/utils'
+    import { toastAlertStatus, required, emailRules } from '@/utils'
 
-import gql from 'graphql-tag'
+    import gql from 'graphql-tag'
 
-export default {
-    name: 'recommendations',
+    export default {
+        name: 'recommendations',
 
-    data () {
-        return {
-            name: '',
-            email: '',
-            phone: '',
-            message: '',
-            valid: true,
-            lazy: false,
-            loading: false,
-            required(propertyType) { 
-                return required(propertyType)
-            },
-            emailRules(propertyType) {
-                return emailRules(propertyType)
+        data () {
+            return {
+                name: '',
+                email: '',
+                phone: '',
+                message: '',
+                valid: true,
+                lazy: false,
+                loading: false,
+                required(propertyType) { 
+                    return required(propertyType)
+                },
+                emailRules(propertyType) {
+                    return emailRules(propertyType)
+                }
             }
-        }
-    },
+        },
 
-    computed: {
-        ...mapState(['mode'])
-    },
+        computed: {
+            ...mapState(['mode'])
+        },
 
-    methods: {
-        onSendMessage () {
-            if (this.$refs.form.validate()) {
-                this.loading = true
+        methods: {
+            onSendMessage () {
+                if (this.$refs.form.validate()) {
+                    this.loading = true
 
-                const {
-                    name,
-                    email,
-                    phone,
-                    message
-                } = this.$data
+                    const {
+                        name,
+                        email,
+                        phone,
+                        message
+                    } = this.$data
 
-                this
-                 .$apollo
-                 .mutate({
-                     mutation: gql`
-                        mutation messageEmail($email: String!, $message: String!, $name: String!, $phone: String) {
-                            insert_email_employer(objects: [{email: $email, message: $message, name: $name, phone: $phone}]) {
-                            returning {
-                                    id
+                    this
+                    .$apollo
+                    .mutate({
+                        mutation: gql`
+                            mutation messageEmail($email: String!, $message: String!, $name: String!, $phone: String) {
+                                insert_email_employer(objects: [{email: $email, message: $message, name: $name, phone: $phone}]) {
+                                returning {
+                                        id
+                                    }
                                 }
-                            }
-                        }  
-                     `,
-                     variables: {
-                         name,
-                         email,
-                         phone,
-                         message
-                     }
-                 })
-                 .then(() => {
-                    this.loading = false
-                    toastAlertStatus('success', 'Email Successfully Sent')
-                    this.$refs.form.reset()
-                 })
-                 .catch(error => {
-                     this.loading = false
-                     toastAlertStatus('error', error)
-                 })
+                            }  
+                        `,
+                        variables: {
+                            name,
+                            email,
+                            phone,
+                            message
+                        }
+                    })
+                    .then(() => {
+                        this.loading = false
+                        toastAlertStatus('success', 'Email Successfully Sent')
+                        this.$refs.form.reset()
+                    })
+                    .catch(error => {
+                        this.loading = false
+                        toastAlertStatus('error', error)
+                    })
 
+                }
             }
         }
     }
-}
+
 </script>
 
 <style scoped>

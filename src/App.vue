@@ -15,17 +15,17 @@
 
 <script>
 
-import { mapState } from 'vuex'
+  import { mapState } from 'vuex'
 
-export default {
-  name: 'app',
+  export default {
+    name: 'app',
 
-  components: {
-    ScrollToTop: () => import('@/components/mixins/ScrollToTop')
-  },
+    components: {
+      ScrollToTop: () => import('@/components/mixins/ScrollToTop')
+    },
 
-  computed: {
-    ...mapState(['mode'])
+    computed: {
+      ...mapState(['mode'])
+    }
   }
-}
 </script>

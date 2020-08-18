@@ -81,33 +81,33 @@
 
 <script>
 
-import { mapState } from 'vuex'
+    import { mapState } from 'vuex'
 
-import teams from '@/static/teams.json'
+    import teams from '@/static/teams.json'
 
-export default {
-    name: 'our-team',
+    export default {
+        name: 'our-team',
 
-    data () {
-        return {
-            items: []
+        data () {
+            return {
+                items: []
+            }
+        },
+
+        computed: {
+            ...mapState(['mode'])
+        },
+
+        components: {
+            HorizontalList: () => import('vue-horizontal-list'),
+            SocialLinkButtons: () => import('@/components/mixins/SocialLinkButtons')
+        },
+        
+        created () {
+            let teamData = teams.teams
+            return this.items.push(...teamData)
         }
-    },
-
-    computed: {
-        ...mapState(['mode'])
-    },
-
-    components: {
-        HorizontalList: () => import('vue-horizontal-list'),
-        SocialLinkButtons: () => import('@/components/mixins/SocialLinkButtons')
-    },
-    
-    created () {
-        let teamData = teams.teams
-        return this.items.push(...teamData)
     }
-}
 
 </script>
 

@@ -46,22 +46,22 @@
 
 <script>
 
-import { mapState } from 'vuex'
+    import { mapState } from 'vuex'
 
-export default {
-    name: 'home',
+    export default {
+        name: 'home',
 
-    methods: {
-        scroll() {
-            document.querySelector('#about')
-                    .scrollIntoView({ behavior: 'smooth' })            
+        methods: {
+            scroll() {
+                document.querySelector('#about')
+                        .scrollIntoView({ behavior: 'smooth' })            
+            }
+        },
+
+        computed: {
+            ...mapState(['mode'])
         }
-    },
-
-    computed: {
-        ...mapState(['mode'])
     }
-}
 </script>
 
 <style scoped lang="scss">

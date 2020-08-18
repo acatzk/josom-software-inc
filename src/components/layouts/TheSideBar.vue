@@ -50,52 +50,52 @@
 
 <script>
 
-import { mapState } from 'vuex'
+    import { mapState } from 'vuex'
 
-export default {
-    name: 'the-side-bar',
+    export default {
+        name: 'the-side-bar',
 
-    props: ['visible'],
+        props: ['visible'],
 
-    components: {
-        ScrollLink: () => import('@/components/mixins/ScrollLink')
-    },
-
-    computed: {
-      show: {
-        get () {
-          return this.visible
+        components: {
+            ScrollLink: () => import('@/components/mixins/ScrollLink')
         },
-        set (value) {
-           if (!value) {
-             this.$emit('close')
-           }
-        }
-      },
-      ...mapState(['mode'])
-    },
 
-    data () {
-        return {
-            navItems: [
-                { icon: 'mdi-cube-outline', text: 'Home', to: 'home' },
-                { icon: 'mdi-information-outline', text: 'About', to: 'about' },
-                { icon: 'mdi-code-tags', text: 'Services', to: 'services' },
-                { icon: 'mdi-laptop-mac', text: 'Projects', to: 'projects' },
-                { icon: 'mdi-ribbon', text: 'Recommendations', to: 'recommendations' },
-                { icon: 'mdi-account-box-outline', text: 'Contact', to: 'contact' },
-                { icon: 'mdi-account-multiple-outline', text: 'Clients', to: 'client' }
-            ]
-        }
-    },
+        computed: {
+        show: {
+            get () {
+            return this.visible
+            },
+            set (value) {
+            if (!value) {
+                this.$emit('close')
+            }
+            }
+        },
+        ...mapState(['mode'])
+        },
 
-    methods: {
-        getBrandLogo (mode) {
-            return require('@/assets/imgs/brand/brand-logo.png')
+        data () {
+            return {
+                navItems: [
+                    { icon: 'mdi-cube-outline', text: 'Home', to: 'home' },
+                    { icon: 'mdi-information-outline', text: 'About', to: 'about' },
+                    { icon: 'mdi-code-tags', text: 'Services', to: 'services' },
+                    { icon: 'mdi-laptop-mac', text: 'Projects', to: 'projects' },
+                    { icon: 'mdi-ribbon', text: 'Recommendations', to: 'recommendations' },
+                    { icon: 'mdi-account-box-outline', text: 'Contact', to: 'contact' },
+                    { icon: 'mdi-account-multiple-outline', text: 'Clients', to: 'client' }
+                ]
+            }
+        },
+
+        methods: {
+            getBrandLogo (mode) {
+                return require('@/assets/imgs/brand/brand-logo.png')
+            }
         }
+
     }
-
-}
 </script>
 
 <style scoped>

@@ -34,33 +34,33 @@
 
 <script>
 
-import { mapState } from 'vuex'
+    import { mapState } from 'vuex'
 
-import clients from '@/static/clients'
+    import clients from '@/static/clients'
 
-export default {
-    name: 'our-clients',
+    export default {
+        name: 'our-clients',
 
-    data () {
-        return {
-            items: []
+        data () {
+            return {
+                items: []
+            }
+        },
+
+        computed: {
+            ...mapState(['mode'])
+        },
+
+        components: {
+            HorizontalList: () => import('vue-horizontal-list')
+        },
+
+        created () {
+            let clientData = clients.clients
+            return this.items.push(...clientData)
         }
-    },
-
-    computed: {
-        ...mapState(['mode'])
-    },
-
-    components: {
-        HorizontalList: () => import('vue-horizontal-list')
-    },
-
-    created () {
-        let clientData = clients.clients
-        return this.items.push(...clientData)
+        
     }
-    
-}
 
 </script>
 

@@ -49,32 +49,32 @@
 
 <script>
 
-import { mapState } from 'vuex'
+    import { mapState } from 'vuex'
 
-import projects from '@/static/projects.json'
+    import projects from '@/static/projects.json'
 
-export default {
-    name: 'projects',
+    export default {
+        name: 'projects',
 
-    data() {
-        return {
-            items: []
+        data() {
+            return {
+                items: []
+            }
+        },
+
+        components: {
+            HorizontalList: () => import('vue-horizontal-list')
+        },
+
+        computed: {
+            ...mapState(['mode'])
+        },
+
+        created () {
+            let projectData = projects.projects
+            return this.items.push(...projectData)
         }
-    },
-
-    components: {
-        HorizontalList: () => import('vue-horizontal-list')
-    },
-
-    computed: {
-        ...mapState(['mode'])
-    },
-
-    created () {
-        let projectData = projects.projects
-        return this.items.push(...projectData)
     }
-}
 </script>
 
 <style scoped>

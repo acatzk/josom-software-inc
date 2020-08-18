@@ -52,37 +52,37 @@
 
 <script>
 
-import { mapState } from 'vuex'
+    import { mapState } from 'vuex'
 
-export default {
-    name: 'services',
+    export default {
+        name: 'services',
 
-    data () {
-        return {
-            services: [
-                {
-                    number: '01',
-                    title: 'Software Development',
-                    description: 'We engineer and build software, web and mobile applications, APIs and more. Our team is experienced with modern technologies and programming languages. Our processes are effective and lean.'
-                },
-                {
-                    number: '02',
-                    title: 'UX and UI Design',
-                    description: 'We design beautiful, functional and purposeful apps, webapps and websites. From Wireframes to MVP to Pixel-Perfect designs. Complex workflows simplified but also beauty of a brand brought out by the simplicity.'
-                },
-                {
-                    number: '03',
-                    title: 'Cloud Hosting & DevOps',
-                    description: 'We run your application on the Cloud or Local Server depending on your requirements. Scalable, high-performance and cost effective. We support fully automated deployments, local or test environments.'
-                }
-            ]
+        data () {
+            return {
+                services: [
+                    {
+                        number: '01',
+                        title: 'Software Development',
+                        description: 'We engineer and build software, web and mobile applications, APIs and more. Our team is experienced with modern technologies and programming languages. Our processes are effective and lean.'
+                    },
+                    {
+                        number: '02',
+                        title: 'UX and UI Design',
+                        description: 'We design beautiful, functional and purposeful apps, webapps and websites. From Wireframes to MVP to Pixel-Perfect designs. Complex workflows simplified but also beauty of a brand brought out by the simplicity.'
+                    },
+                    {
+                        number: '03',
+                        title: 'Cloud Hosting & DevOps',
+                        description: 'We run your application on the Cloud or Local Server depending on your requirements. Scalable, high-performance and cost effective. We support fully automated deployments, local or test environments.'
+                    }
+                ]
+            }
+        },
+
+        computed: {
+            ...mapState(['mode'])
         }
-    },
-
-    computed: {
-        ...mapState(['mode'])
     }
-}
 </script>
 
 <style scoped lang="scss">

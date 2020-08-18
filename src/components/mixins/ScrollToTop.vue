@@ -29,41 +29,41 @@
 
 <script>
 
-import { mapState } from 'vuex'
+    import { mapState } from 'vuex'
 
-export default {   
+    export default {   
 
-    name: 'back-top-top',
+        name: 'back-top-top',
 
-    data () {
-        return {
-            fab: false
-        }
-    },
-
-    computed: {
-        ...mapState(['mode'])
-    },
-
-    methods:{
-
-        onScroll (e) {
-
-            if(typeof window === 'undefined') return
-
-            const top = window.pageYOffset || e.target.scrollTop || 0
-
-            this.fab = top > 10
-
+        data () {
+            return {
+                fab: false
+            }
         },
 
-        toTop (){
-            
-            this.$vuetify.goTo(0)
+        computed: {
+            ...mapState(['mode'])
+        },
+
+        methods:{
+
+            onScroll (e) {
+
+                if(typeof window === 'undefined') return
+
+                const top = window.pageYOffset || e.target.scrollTop || 0
+
+                this.fab = top > 10
+
+            },
+
+            toTop (){
+                
+                this.$vuetify.goTo(0)
+
+            }
 
         }
 
     }
-
-}
 </script>>

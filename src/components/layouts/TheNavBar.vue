@@ -52,34 +52,35 @@
 
 <script>
 
-import { mapState } from 'vuex'
+    import { mapState } from 'vuex'
 
-export default {
-    name: 'the-nav-bar',
+    export default {
+        name: 'the-nav-bar',
 
-    data () {
-        return {
-            drawer: true
-        }
-    },
-
-    components: {
-        TheSideBar: () => import('./TheSideBar')
-    },
-
-    computed: {
-        ...mapState(['mode'])
-    },
-
-    methods: {
-        getbusinessLogo () {
-            return require('@/assets/imgs/brand/brand-logo.png')
+        data () {
+            return {
+                drawer: true
+            }
         },
-        scroll() {
-            document.querySelector('#home').scrollIntoView({ behavior: 'smooth' })        
+
+        components: {
+            TheSideBar: () => import('./TheSideBar')
+        },
+
+        computed: {
+            ...mapState(['mode'])
+        },
+
+        methods: {
+            getbusinessLogo () {
+                return require('@/assets/imgs/brand/brand-logo.png')
+            },
+            scroll() {
+                document.querySelector('#home').scrollIntoView({ behavior: 'smooth' })        
+            }
         }
     }
-}
+
 </script>
 
 <style scoped>
