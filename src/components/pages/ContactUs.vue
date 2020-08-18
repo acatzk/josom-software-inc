@@ -29,6 +29,7 @@
                     v-model="valid"
                     :lazy-validation="lazy"
                     :disabled="loading" 
+                    data-aos="fade-up"
                 >
                     <v-row class="mx-12">
                         <v-col cols="12" sm="4">

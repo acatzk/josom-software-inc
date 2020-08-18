@@ -25,6 +25,7 @@
                             height="400"
                             flat
                             outlined
+                            data-aos="flip-left"
                         >
                             <v-img
                                 height="200px"

@@ -11,7 +11,7 @@
                 </v-card-text>
             </v-flex>
 
-            <carousel-3d width="500" height="500" :autoplay="true" :autoplay-timeout="2400" >
+            <carousel-3d width="500" height="500" :autoplay="true" :autoplay-timeout="2400" data-aos="flip-right">
                 <div v-for="(item, index) in items" :key="index">
                     <slide :index="item.id">
                         <img src="https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.15752-9/118074586_1078672019288834_6769038450289390241_n.png?_nc_cat=102&_nc_sid=ae9488&_nc_ohc=0EBZek8i9KoAX-LbGDI&_nc_ht=scontent.fmnl9-1.fna&oh=3a1acfba13b0dab1e94002fd96dc6f1b&oe=5F61001B"/>

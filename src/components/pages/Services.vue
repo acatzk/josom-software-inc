@@ -29,6 +29,7 @@
                         :dark="mode ? false : true"
                         flat
                         :class="`bg-image-${service.number}`"
+                        data-aos="fade-up-right"
                     >
                         <v-container>
                             <div class="number">

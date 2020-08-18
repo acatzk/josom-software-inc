@@ -16,7 +16,7 @@
                 </v-card-text>
             </v-flex>
 
-            <horizontal-list :items="items" class="mx-4">
+            <horizontal-list :items="items" class="mx-4" data-aos="fade-left">
                 <template v-slot:default="{item}">
                     <v-img
                         height="200px"

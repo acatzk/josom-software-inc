@@ -22,6 +22,7 @@
                         class="mx-auto elevation-3"
                         max-width="500"
                         flat
+                        data-aos="flip-left"
                     >
                         <v-container class="text-center">
                             <v-flex>
