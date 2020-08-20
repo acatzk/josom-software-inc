@@ -106,6 +106,6 @@
     font-size: 1.3rem !important;
 }
 .nav-drawer {
-    background-color: rgb(235 243 253);
+    background-color: rgb(251 253 255);
 }
 </style>
