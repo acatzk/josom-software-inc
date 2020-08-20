@@ -5,7 +5,7 @@
         id="about"
         :dark="mode ? false : true"
     >
-        <v-container data-aos="fade-up-left">
+        <v-container data-aos="zoom-in">
             <v-card-text class="font-weight-normal text-uppercase subtitle">
                 <span>ABOUT US</span>
             </v-card-text>
