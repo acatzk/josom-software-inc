@@ -21,6 +21,16 @@
             "stackoverflowLink": "https://stackoverflow.com/users/10297873/veo-script"
         },
         {
+            "name": "Resamae Cabulang",
+            "position": "UX Designer",
+            "speech": "Everything is designed. Few things are designed well.",
+            "image": "https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.0-9/60334687_2039128186390033_6474191306368221184_o.jpg?_nc_cat=111&_nc_sid=8bfeb9&_nc_ohc=Q7DQzSUM5cYAX9EU8F_&_nc_ht=scontent.fmnl9-1.fna&oh=ef31cf45d8255a835a67a31febbf785a&oe=5F625071",
+            "fbLink": "https://www.facebook.com/artech127",
+            "githubLink": "https://github.com/mikie27",
+            "twitterLink": "",
+            "stackoverflowLink": ""
+        },
+        {
             "name": "Gilchrist Calunia",
             "position": "Fullstack Developer",
             "speech": "Where innovation meets excellence",
@@ -31,12 +41,12 @@
         },
         {
             "name": "Jayson Mendez",
-            "position": "Frontend Developer",
+            "position": "IT Specialist",
             "speech": "Information for the safer world",
             "image": "https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.0-9/61359475_912716175734101_3720374661196808192_n.jpg?_nc_cat=108&_nc_sid=0debeb&_nc_ohc=Nbut9NaBDtsAX_DMAtj&_nc_ht=scontent.fmnl9-1.fna&oh=52ff5d291e1cb4b9cd7f6614815e10d5&oe=5F60068A",
             "fbLink": "https://www.facebook.com/gilchrist.calunia",
             "githubLink": "",
-            "twitterLink": ""
+            "twitterLink": "https://twitter.com/JaysonMendez14"
         },
         {
             "name": "Jerwin Gilo",
