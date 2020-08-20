@@ -13,7 +13,7 @@
 
             <v-flex>
                 <div class="d-flex justify-center">
-                    <v-icon>mdi-home-outline</v-icon>: #Baybay, Leyte
+                    <v-icon>mdi-home-outline</v-icon>: Baybay, Leyte
                 </div>
                 <div class="d-flex justify-center">
                     <v-icon>mdi-cellphone-iphone</v-icon>: +63 9657268947 / +63 9753286466
