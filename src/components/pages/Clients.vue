@@ -16,13 +16,14 @@
                 </v-card-text>
             </v-flex>
 
-            <horizontal-list :items="items" class="mx-4" data-aos="fade-left">
+            <horizontal-list :items="items" class="mx-4">
                 <template v-slot:default="{item}">
                     <v-img
                         height="200px"
                         :src="item.image"
                         class="white--text align-end"
                         :lazy-src="item.image"
+                        data-aos="fade-left"
                     >
                     </v-img>
                 </template>
